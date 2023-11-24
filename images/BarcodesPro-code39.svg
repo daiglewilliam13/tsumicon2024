@@ -1,0 +1,26 @@
+<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="196.5" height="150" viewBox="0 0 131 110"><g><rect x="0" y="0" width="131" height="100" fill="white"/><g transform="translate(10 10)"><g><rect x="0" y="0" width="1" height="80" fill="url(#black)"/><rect x="4" y="0" width="1" height="80" fill="url(#black)"/><rect x="6" y="0" width="3" height="80" fill="url(#black)"/><rect x="10" y="0" width="3" height="80" fill="url(#black)"/><rect x="14" y="0" width="1" height="80" fill="url(#black)"/><text x="7.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">*</text></g><g></g><g><rect x="16" y="0" width="3" height="80" fill="url(#black)"/><rect x="20" y="0" width="1" height="80" fill="url(#black)"/><rect x="22" y="0" width="3" height="80" fill="url(#black)"/><rect x="28" y="0" width="1" height="80" fill="url(#black)"/><rect x="30" y="0" width="1" height="80" fill="url(#black)"/><text x="23.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">E</text></g><g></g><g><rect x="32" y="0" width="3" height="80" fill="url(#black)"/><rect x="36" y="0" width="1" height="80" fill="url(#black)"/><rect x="38" y="0" width="1" height="80" fill="url(#black)"/><rect x="40" y="0" width="3" height="80" fill="url(#black)"/><rect x="46" y="0" width="1" height="80" fill="url(#black)"/><text x="39.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">R</text></g><g></g><g><rect x="48" y="0" width="3" height="80" fill="url(#black)"/><rect x="52" y="0" width="1" height="80" fill="url(#black)"/><rect x="54" y="0" width="1" height="80" fill="url(#black)"/><rect x="56" y="0" width="3" height="80" fill="url(#black)"/><rect x="62" y="0" width="1" height="80" fill="url(#black)"/><text x="55.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">R</text></g><g></g><g><rect x="64" y="0" width="3" height="80" fill="url(#black)"/><rect x="68" y="0" width="1" height="80" fill="url(#black)"/><rect x="70" y="0" width="3" height="80" fill="url(#black)"/><rect x="74" y="0" width="1" height="80" fill="url(#black)"/><rect x="78" y="0" width="1" height="80" fill="url(#black)"/><text x="71.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">O</text></g><g></g><g><rect x="80" y="0" width="3" height="80" fill="url(#black)"/><rect x="84" y="0" width="1" height="80" fill="url(#black)"/><rect x="86" y="0" width="1" height="80" fill="url(#black)"/><rect x="88" y="0" width="3" height="80" fill="url(#black)"/><rect x="94" y="0" width="1" height="80" fill="url(#black)"/><text x="87.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">R</text></g><g></g><g><rect x="96" y="0" width="1" height="80" fill="url(#black)"/><rect x="100" y="0" width="1" height="80" fill="url(#black)"/><rect x="102" y="0" width="3" height="80" fill="url(#black)"/><rect x="106" y="0" width="3" height="80" fill="url(#black)"/><rect x="110" y="0" width="1" height="80" fill="url(#black)"/><text x="103.5" y="90" text-anchor="middle" font-family="monospace" font-size="10" fill="black">*</text></g><defs>
+			<linearGradient id="black" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#000"/>
+				<stop offset="100%" stop-color="#000"/>
+			</linearGradient>
+			<linearGradient id="navyBlue" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#00379c"/>
+				<stop offset="100%" stop-color="#00379c"/>
+			</linearGradient>
+			<linearGradient id="midnightGreen" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#008000"/>
+				<stop offset="100%" stop-color="#008000"/>
+			</linearGradient>
+			<linearGradient id="holo" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#ae00ff"/>
+				<stop offset="100%" stop-color="#009dff"/>
+			</linearGradient>
+			<linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#d85bc6"/>
+				<stop offset="100%" stop-color="#5c4cff"/>
+			</linearGradient>
+			<linearGradient id="neon" x1="0" x2="0" y1="0" y2="1">
+				<stop offset="0%" stop-color="#00c400"/>
+				<stop offset="100%" stop-color="#00612a"/>
+			</linearGradient>
+		</defs></g></g></svg>

@@ -1,0 +1,44 @@
+#registration {
+    margin-top: 10rem;
+}
+
+.vendor-app-wrapper {
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    padding-bottom: 2rem;
+
+}
+
+.reg-wrapper {
+    text-align: center;
+}
+
+.red-bar {
+    width: 100
+}
+
+.registration-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.panel-border {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+
+
+.reg-list-image {
+    height: 1rem;
+}
+
+.measure-marks-bottom {
+    margin-right: 8rem;
+}
+
+#eventbrite-widget-container-737467062837 {
+    margin-bottom: 4rem;
+}

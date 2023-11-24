@@ -1,0 +1,28 @@
+#hotel-information {
+    margin-top: 10rem;
+}
+
+
+#map-wrapper {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.measure-marks-bottom {
+    margin-right: 10rem;
+}
+
+.bar-text {
+    font-size: 1.5rem;
+    margin: auto 0;
+    width: 100%;
+}
+
+button.cta-button {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}

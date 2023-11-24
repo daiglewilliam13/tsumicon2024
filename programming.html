@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tsumicon News</title>
+        <meta name="" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/programming.css">
+
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="background-filter"></div>
+        <section id="top-nav-wrapper">
+            <input type="checkbox" id="mobile-menu">
+            <label id="burger" for="mobile-menu">
+                <img src="../images/Circle Logo-white.png" class="navbar-logo">
+                Menu
+            </label>
+            <nav id="top-navbar">
+                <img src="../images/Circle Logo-white.png" class="navbar-logo">
+                <a class="navlink" href="home.html">home</a>
+                <a class="navlink" href="news.html">news</a>
+                <a class="navlink" href="registration.html">registration</a>
+                <a class="navlink" href="guests.html">guests</a>
+                <a class="navlink" href="hotel.html">hotel</a>
+                <a class="navlink" href="programming.html">programming</a>
+                <a class="navlink" href="faq.html">faq</a>
+                <a class="navlink" href="policies.html">policies</a>
+                <a class="navlink" href="after-party.html">after party</a>
+                <a href="./registration.html" target="_blank"><button>Buy
+                        your badge<img class="chevron-icon" src="../images/chevron icon.svg"></button></a>
+                <div id="details-dropdown">
+                    <div>Tsumicon</div>
+                    <div>April 5 - 7, 2024</div>
+                    <div>Alexis Park Hotel</div>
+                    <div>Las Vegas, NV</div>
+            </nav>
+        </section>
+        <section id="programming">
+            <div class="sub-hero">
+
+                <h1 class="page-title">Full Programming</h1>
+                <p class="sub-hero-text">Find maps of the Exhibit Hall, Artist Alley, Full Event Schedule and Itasha
+                    lineup</p>
+                <img class="measure-marks-bottom" src="../images/measure lines.png">
+            </div>
+            <div id="tab-wrapper">
+                <div onClick="changeTab(event, 'event-sched')" class="tab selected">Event Schedule & Map</div>
+                <div onClick="changeTab(event, 'exhibit-hall')" class="tab">Exhibitor Hall</div>
+                <div onClick="changeTab(event, 'artist-alley')" class="tab">Artist Alley</div>
+                <div onClick="changeTab(event, 'itasha')" class="tab">Itasha</div>
+            </div>
+            <div id="event-sched" class="tab-content show">
+                <img class="tab-map" src="../images/MAP 3@4x With Infos.png">
+            </div>
+            <div id="exhibit-hall" class="tab-content">
+                <h3 class="event-header">Exhibit Hall Map</h3>
+                <img class="tab-map" src="../images/Vendor Map to Be sent.jpg">
+            </div>
+            <div id="artist-alley" class="tab-content">
+                <h3 class="event-header">Artist Alley Map</h3>
+                <img class="tab-map" src="../images/Tsumicon_Map_Zeus@4x.png" alt="">
+            </div>
+            <div id="itasha" class="tab-content">
+                <h3 class="event-header">Check Back Soon for itasha line up!</h3>
+            </div>
+        </section>
+        <section id="footer">
+            <div id="bottom-navbar">
+                <img src="../images/Circle Logo-white.png" id="navbar-logo">
+                <div id="footer-details">
+                    <h4>tsumicon 2024</h4>
+                    <h4>april 5 - 7</h4>
+                    <h4>alexis park hotel, las vegas nv</h4>
+                    <h4>all rights reserved ©2023</h4>
+                </div>
+            </div>
+            <div id="email-signup-wrapper">
+                <h1>Sign up to receive updates</h1>
+                <input type="text" placeholder="name@email.com" id="email-input"><br>
+                <button onClick="submitEmail()" id="email-submit"><span id="button-text" class="">Sign
+                        up</span></button>
+            </div>
+        </section>
+        <script src="../js/main.js" async defer></script>
+        <script src="../js/programming.js" async defer></script>
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+#vendor-app {
+    margin-top: 10rem;
+}
+
+.header {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.application-wrapper {
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.black-bar {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+input,
+label,
+select {
+    font-size: 1.5rem;
+}
+
+#day-wrapper label {
+    width: 100%;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fix {
+    border: 2px solid red;
+}

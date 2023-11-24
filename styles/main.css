@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "CA Mechano";
+    src: url('fonts/CA\ Mechano/CAMECHANO_V1010-REGULAR.OTF') format('opentype');
+
+}
+
+@font-face {
+    font-family: "BarlowSemiCondensed-Light";
+    src: url('fonts/barlow-semi-condensed/BarlowSemiCondensed-Light.ttf') format('truetype');
+}
+
+html {
+    font-size: 1rem;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background-image: url('../images/sample_wallpaper.jpg');
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    font-family: "BarlowSemiCondensed-Light";
+}
+
+div#background-filter {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.headline {
+    font-family: "CA Mechano";
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    text-decoration: underline;
+    margin: 0;
+}
+
+button:hover {
+    transition: 200ms;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 10px 1px #710c04;
+}
+
+button:hover img.chevron-icon {
+    transition: 200ms;
+    filter: invert(1);
+    animation: spin 200ms ease-out;
+}
+
+button {
+    transition: 200ms;
+    background-color: white;
+    border-radius: 0;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    white-space: nowrap;
+
+}
+
+img.chevron-icon {
+    margin: 0 .5rem;
+    vertical-align: bottom;
+}
+
+.sub-hero {
+
+    background-color: #710c04;
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: 3rem auto;
+    max-width: 1900px;
+    text-shadow: 1px 1px 10px black;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    min-height: 20rem;
+}
+
+.sub-hero:before {
+    content: "";
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-image: url("../images/Circle\ Logo-black-list.png");
+    position: absolute;
+    top: 0rem;
+    right: 10rem;
+    bottom: 0px;
+    left: 0rem;
+    opacity: 0.4;
+    overflow: hidden;
+    background-position-x: right;
+}
+
+.page-title {
+    animation: slide-in 400ms ease-in-out 1 forwards;
+    position: relative;
+    font-size: 3rem;
+    font-family: 'CA Mechano';
+    margin: 0;
+
+
+}
+
+.sub-hero .measure-marks-bottom {
+    right: auto;
+}
+
+.sub-hero-text {
+    opacity: 0;
+    animation: slide-in 300ms ease-in-out 1 forwards;
+    animation-delay: 200ms;
+    margin: 1rem 0;
+    position: relative;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+.highlight-red {
+    color: #710c04;
+}
+
+div.red-bar {
+    background-color: #710c04;
+    color: white;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    min-height: 20rem;
+}
+
+div.black-bar {
+    background-color: #070707;
+    color: white;
+    padding-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+
+.bar-text {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    width: 60%;
+    padding: 0 1rem;
+}
+
+.right-corner-lines {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5rem;
+
+}
+
+.panel-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.left-corner-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+}
+
+.right-barcode {
+    position: absolute;
+    right: 4rem;
+    top: 2.5em;
+    width: 23vw;
+}
+
+.left-barcode {
+    position: absolute;
+    left: 4rem;
+    bottom: 2.5rem;
+    width: 23vw;
+}
+
+.bar-info-left {
+    position: relative;
+    left: 7vw;
+    width: 70vw;
+    padding: 1rem 0 0 2rem;
+    display: flex;
+}
+
+.measure-marks-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+    transform: rotate(180deg);
+}
+
+.measure-marks-bottom,
+.measure-marks-top {
+    min-width: 10rem;
+    overflow-x: hidden;
+}
+
+button.cta-button {
+    margin: 1rem;
+}
+
+.top-left-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+}
+
+.bottom-right-triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5rem;
+}
+
+.bar-info-right {
+    padding: 3rem 0 2rem 35%;
+    right: 4rem;
+    width: 60vw;
+}
+
+.comic-panel-border {
+    background-color: white;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+#p3-wrapper {
+    height: 100%;
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    margin: 1rem;
+    height: 20rem;
+    width: 20rem;
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.panel-border {
+    height: 100%;
+    transition: 100ms;
+    padding: 0 2rem;
+}
+
+.event-card:hover {
+    transition: 200ms;
+    background-color: #2D3142;
+    color: white;
+}
+
+.panel-headline {
+    font-family: "CA Mechano";
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 3rem;
+    border-top: 2px solid #2D3142;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#email-signup-wrapper {
+    border-left: 2px solid #2D3142;
+    padding: 0 0 0 2rem;
+    margin: auto 2rem;
+    flex-grow: 3;
+}
+
+#email-input {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 25rem;
+    margin: 1rem 0;
+    font-family: 'BarlowSemiCondensed-Light';
+}
+
+#bottom-navbar {
+    text-transform: uppercase;
+    display: flex;
+    margin: 3rem 0 0 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    font-family: 'Barlow';
+    text-align: center;
+}
+
+#footer-details {
+    margin: auto 1rem;
+
+}
+
+#bottom-navbar img {
+    margin: auto;
+    height: 10rem;
+}
+
+button:disabled:hover {
+    cursor: wait;
+}
+
+.loading-spinner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0);
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid grey;
+    border-top-color: #710c04;
+    animation: spin .8s infinite ease-in-out;
+
+}
+
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translatey(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .sub-hero {
+        padding: 5rem 0 2rem 8rem;
+    }
+}

@@ -1,0 +1,73 @@
+#guest-list {
+    margin: 10rem auto;
+    width: 100%;
+}
+
+.image-wrapper {
+    display: relative;
+    filter: grayscale(0%)
+}
+
+.badge-wrapper {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    width: 135%;
+    flex-wrap: wrap;
+    top: 11rem;
+    justify-content: space-between;
+}
+
+.badge {
+    background-color: #2D3142;
+    color: white;
+    margin: 2px;
+    padding: 0 3px;
+    font-size: .9rem;
+    box-shadow: 0px 0px 10px -2px black;
+}
+
+.guest-card-wrapper {
+    height: 8rem;
+    width: 6rem;
+    margin: 5rem 2rem;
+}
+
+.card-frame {
+    height: 11rem;
+}
+
+.black-bar {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.guest-list {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+    .guest-card-wrapper {
+        height: 20rem;
+        width: 15rem;
+        margin: 3rem;
+        position: relative;
+    }
+
+    .card-frame {
+        height: auto;
+    }
+
+    .image-wrapper {
+        filter: grayscale(100%);
+    }
+
+    .badge-wrapper {
+        flex-direction: row;
+        width: 90%;
+        top: auto;
+        bottom: .5rem;
+        justify-content: flex-start;
+    }
+}

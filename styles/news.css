@@ -1,0 +1,50 @@
+#blogs {
+    margin: 5rem 0 0 0;
+}
+
+.blog-wrapper {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 1600px;
+}
+
+
+.blog-header .headline {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-details {
+    margin: 1rem 0;
+    width: 50%;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.analytics {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.analytics div {
+    display: block;
+    margin: 1rem .5rem;
+}
+
+.blog-text p {
+    text-indent: 2rem;
+    white-space: pre-wrap;
+
+}
+
+
+@media screen and (min-width: 600px) {
+    #blogs {
+        margin: 10rem 0;
+        padding: 0;
+        width: 100%;
+    }
+
+}

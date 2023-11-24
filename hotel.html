@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tsumicon News</title>
+        <meta name="" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/hotel.css">
+
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="background-filter"></div>
+        <section id="top-nav-wrapper">
+            <input type="checkbox" id="mobile-menu">
+            <label id="burger" for="mobile-menu">
+                <img src="../images/Circle Logo-white.png" class="navbar-logo">
+                Menu
+            </label>
+            <nav id="top-navbar">
+                <img src="../images/Circle Logo-white.png" class="navbar-logo">
+                <a class="navlink" href="home.html">home</a>
+                <a class="navlink" href="news.html">news</a>
+                <a class="navlink" href="registration.html">registration</a>
+                <a class="navlink" href="guests.html">guests</a>
+                <a class="navlink" href="hotel.html">hotel</a>
+                <a class="navlink" href="programming.html">programming</a>
+                <a class="navlink" href="faq.html">faq</a>
+                <a class="navlink" href="policies.html">policies</a>
+                <a class="navlink" href="after-party.html">after party</a>
+                <a href="./registration.html" target="_blank"><button>Buy
+                        your badge<img class="chevron-icon" src="../images/chevron icon.svg"></button></a>
+                <div id="details-dropdown">
+                    <div>Tsumicon</div>
+                    <div>April 5 - 7, 2024</div>
+                    <div>Alexis Park Hotel</div>
+                    <div>Las Vegas, NV</div>
+            </nav>
+        </section>
+        <section id="hotel-information">
+            <div class="sub-hero">
+
+                <h1 class="page-title">Tsumicon Location and Details</h1>
+                <p class="sub-hero-text">Alexis Park Hotel</p>
+                <p class="sub-hero-text">375 E Harmon Ave, Las Vegas NV 89169</p>
+                <p class="sub-hero-text">Get a special rate with our discount code:
+                <h2>TSUM424</h2>
+                </p>
+                <a href="https://bookings.travelclick.com/85179?adults=1&datein=04/05/2024&dateout=04/07/2024&languageid=1&rooms=1#/datesofstay"
+                    target="_blank"><button class="cta-button">Book a Special Rate Room <img class="chevron-icon"
+                            src="../images/chevron icon.svg" class=""></button></a>
+                <img class="measure-marks-bottom" src="../images/measure lines.png">
+
+            </div>
+            <div class="black-bar">
+                <img class="left-corner-lines" src="../images/triangle and lines corner - left.png">
+                <div id="map-wrapper">
+                    <div class="bar-text">
+                        <h2 class="headline">Check us out at the Alexis Park Hotel</h2>
+                        <p><em>Less than a mile from the strip!</em></p>
+
+                    </div>
+                    <div id="area-map" style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=Alexis+Park+Resort,+East+Harmon+Avenue,+Las+Vegas,+NV,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div><a class="googl-ehtml" href="https://kbj9qpmy.com/bp" id="enable-map-data">Broadband
+                            Providers</a>
+                    </div>
+                </div>
+                <img class="measure-marks-bottom" src="../images/measure lines.png">
+                <img class="bottom-right-triangle" src="../images/bottom-right-triangle.png">
+            </div>
+
+        </section>
+        <section id="footer">
+            <div id="bottom-navbar">
+                <img src="../images/Circle Logo-white.png" id="navbar-logo">
+                <div id="footer-details">
+                    <h4>tsumicon 2024</h4>
+                    <h4>april 5 - 7</h4>
+                    <h4>alexis park hotel, las vegas nv</h4>
+                    <h4>all rights reserved ©2023</h4>
+                </div>
+            </div>
+            <div id="email-signup-wrapper">
+                <h1>Sign up to receive updates</h1>
+                <input type="text" placeholder="name@email.com" id="email-input"><br>
+                <button onClick="submitEmail()" id="email-submit"><span id="button-text" class="">Sign
+                        up</span></button>
+            </div>
+        </section>
+        <script src="../js/main.js" async defer></script>
+    </body>
+
+</html>
