@@ -1,6 +1,33 @@
 console.log('vendor app js connected');
 let isLoading = false;
-const submitVendorURL = 'https://tsumicon.wixsite.com/my-site/_functions/vendorApplication'
+const submitVendorURL = 'https://tsumicon.wixsite.com/my-site/_functions/vendorApplication';
+const panelDescText = document.getElementById('description');
+const panelDescLabel = document.getElementById('desc-label');
+const appType = document.getElementById('app-type');
+const showPanelDesc = () => {
+    panelDescText.classList.remove('hide');
+    panelDescText.classList.add('show');
+    panelDescLabel.classList.remove('hide');
+    panelDescLabel.classList.add('show');
+}
+
+const hidePanelDesc = () => {
+    panelDescText.classList.remove('show');
+    panelDescText.classList.add('hide');
+    panelDescLabel.classList.remove('show');
+    panelDescLabel.classList.add('hide');
+}
+
+const togglePanelDesc = () => {
+    if (appType.value == "panel") {
+        showPanelDesc();
+    } else {
+        hidePanelDesc();
+    }
+}
+
+appType.addEventListener("change", togglePanelDesc)
+
 const submitVendorApp = async () => {
     if (isLoading === false) {
         let canSubmitVendorApp = true;
@@ -16,6 +43,7 @@ const submitVendorApp = async () => {
         let phone = document.getElementById('phone-number');
         let email = document.getElementById('email-address');
         let handles = document.getElementById('handles');
+        let description = document.getElementById('description')
         //add form to array and check for values
         let formArray = [];
         formArray.push(applicationType, firstName, lastName, phone, email, handles)
@@ -33,7 +61,8 @@ const submitVendorApp = async () => {
             lastName: lastName.value,
             emailAddress: email.value,
             phoneNumber: phone.value,
-            socials: handles.value
+            socials: handles.value,
+            description: description.value
         }
         if (canSubmitVendorApp === false) {
             alert('application incomplete');

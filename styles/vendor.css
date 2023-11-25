@@ -25,16 +25,16 @@ select {
     font-size: 1.5rem;
 }
 
-#day-wrapper label {
-    width: 100%;
-    display: inline-block;
-}
-
-input[type="checkbox"] {
-    width: 1.5rem;
-    height: 1.5rem;
-}
 
 .fix {
     border: 2px solid red;
+}
+
+.hide {
+    display: none;
+
+}
+
+.show {
+    display: block;
 }
