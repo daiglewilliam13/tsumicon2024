@@ -142,6 +142,12 @@ img.sponsor-logo {
     margin-right: 2rem;
 }
 
+#otaku {
+    height: 1.9rem;
+    margin: .9rem 0;
+    width: 12rem;
+}
+
 #sponsor-wrapper {
     justify-content: flex-end;
     display: flex;
@@ -225,12 +231,17 @@ img.location-icon {
         margin: 0;
     }
 
+    #otaku {
+        height: 1rem;
+        width: auto;
+    }
+
     .bar-text {
         width: 100%;
     }
 
     #sponsor-wrapper {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 0;
         padding: 0;

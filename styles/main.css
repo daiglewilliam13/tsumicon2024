@@ -312,7 +312,7 @@ button.cta-button {
 #bottom-navbar {
     text-transform: uppercase;
     display: flex;
-    margin: 3rem 0 0 0;
+    margin: 0;
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: center;
@@ -325,9 +325,14 @@ button.cta-button {
 
 }
 
+#footer-details h4:first-child {
+    font-size: 2rem;
+    margin: 0;
+}
+
 #bottom-navbar img {
     margin: auto;
-    height: 10rem;
+    height: 15rem;
 }
 
 button:disabled:hover {
