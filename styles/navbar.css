@@ -40,6 +40,12 @@
     display: none;
 }
 
+#full-logo-top {
+    height: 4.5rem;
+    margin: 1rem auto;
+    width: 3rem;
+}
+
 #burger {
     display: block;
 }
@@ -156,13 +162,17 @@
         width: 75%;
     }
 
+    #full-logo-top {
+        margin: 0 2rem;
+    }
+
     #details-dropdown {
         margin-top: 0;
-        margin-left: 4rem;
-        border-left: 2px solid white;
         padding-left: 1rem;
-        white-space: nowrap;
 
+        white-space: nowrap;
+        text-align: left;
+        border-left: 2px solid white;
     }
 
     .navlink {
