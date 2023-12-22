@@ -11,6 +11,7 @@ async function getPosts(url) {
         });
         let data = await response.json();
         if (response) {
+            console.log(data)
             buildPost(data)
         }
     } catch (err) {
@@ -30,7 +31,7 @@ function buildPost(data) {
         postHTML +=
             `<div class="blog-wrapper">
                     <div class="blog-header">
-                        <h2 class="headline">${post.title}</h2>
+                        <a href="https://tsumicon.wixsite.com/my-site${post.postPageUrl}" target="_blank"><h2 class="headline">${post.title}</h2></a>
                         <div class="blog-details">
                             <div class="date">On ${postDate}</div>
                             <div class="author">By: TsumiCon Staff</div>
@@ -38,6 +39,9 @@ function buildPost(data) {
                     </div>
                     <div class="blog-text">
                         <p class="text">${post.plainContent.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
+                    </div>
+                    <div>
+                        <img src="https://static.wixstatic.com/media/"
                     </div>
                     <div class="analytics">
                         <div class="view-count">
