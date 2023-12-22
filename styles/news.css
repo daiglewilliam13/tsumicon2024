@@ -34,7 +34,6 @@
 }
 
 .blog-text p {
-    text-indent: 2rem;
     white-space: pre-wrap;
 
 }
@@ -45,6 +44,10 @@
         margin: 10rem 0;
         padding: 0;
         width: 100%;
+    }
+
+    p.text {
+        margin-left: 1rem;
     }
 
 }
