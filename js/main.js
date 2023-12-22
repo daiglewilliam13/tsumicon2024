@@ -16,7 +16,6 @@ if (window.innerWidth > screen.availWidth) {
     link.href = '../styles/desktop-mobile.css';
     // Append link element to HTML head
     head.appendChild(link);
-    alert('You are forcing the desktop site while browsing on your phone. Uncheck "Desktop Site" in your phone settings for a better browsing experience')
 }
 let submitEmailURL = "https://tsumicon.wixsite.com/my-site/_functions/mailingList"
 let canSubmit = true;
