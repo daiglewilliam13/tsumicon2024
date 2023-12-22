@@ -40,9 +40,6 @@ function buildPost(data) {
                     <div class="blog-text">
                         <p class="text">${post.plainContent.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
                     </div>
-                    <div>
-                        <img src="https://static.wixstatic.com/media/"
-                    </div>
                     <div class="analytics">
                         <div class="view-count">
                             ${post.viewCount} views
