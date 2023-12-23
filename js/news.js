@@ -12,7 +12,7 @@ async function getPosts(url) {
         let data = await response.json();
         if (response) {
             localStorage.clear();
-            localStorage.setItem("data", JSON.stringify((data)));
+            localStorage.setItem("posts", JSON.stringify((data.items)));
             buildPost(data)
         }
     } catch (err) {
