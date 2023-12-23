@@ -11,13 +11,15 @@ async function getPosts(url) {
         });
         let data = await response.json();
         if (response) {
-            console.log(data)
+            localStorage.setItem("data", JSON.stringify((data)));
             buildPost(data)
         }
     } catch (err) {
         console.log(err);
     }
 }
+
+
 
 function buildPost(data) {
     let postHTML = `
@@ -31,7 +33,7 @@ function buildPost(data) {
         postHTML +=
             `<div class="blog-wrapper">
                     <div class="blog-header">
-                        <a href="https://tsumicon.wixsite.com/my-site${post.postPageUrl}" target="_blank"><h2 class="headline">${post.title}</h2></a>
+                        <a id="${post._id}" href="/details.html" target="_blank"><h2 class="headline">${post.title}</h2></a>
                         <div class="blog-details">
                             <div class="date">On ${postDate}</div>
                             <div class="author">By: TsumiCon Staff</div>
