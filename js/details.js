@@ -22,7 +22,7 @@ const buildPost = (post) => {
     postHTML +=
         `<div class="blog-wrapper">
                     <div class="blog-header" id="${post._id}">
-                        <a  href="/details.html?post=${post.slug}" target="_blank"><h2 class="headline">${post.title}</h2></a>
+                        <h2 class="headline">${post.title}</h2>
                         <div class="blog-details">
                             <div class="date">On ${postDate}</div>
                             <div class="author">By: TsumiCon Staff</div>
