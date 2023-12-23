@@ -11,6 +11,7 @@ async function getPosts(url) {
         });
         let data = await response.json();
         if (response) {
+            localStorage.clear();
             localStorage.setItem("data", JSON.stringify((data)));
             buildPost(data)
         }
@@ -18,8 +19,6 @@ async function getPosts(url) {
         console.log(err);
     }
 }
-
-
 
 function buildPost(data) {
     let postHTML = `
@@ -32,8 +31,8 @@ function buildPost(data) {
         let postDate = new Date(post.lastPublishedDate).toDateString();
         postHTML +=
             `<div class="blog-wrapper">
-                    <div class="blog-header">
-                        <a id="${post._id}" href="/details.html" target="_blank"><h2 class="headline">${post.title}</h2></a>
+                    <div class="blog-header" id="${post._id}">
+                        <a  href="/details.html?post=${post.slug}" target="_blank"><h2 class="headline">${post.title}</h2></a>
                         <div class="blog-details">
                             <div class="date">On ${postDate}</div>
                             <div class="author">By: TsumiCon Staff</div>
@@ -61,5 +60,4 @@ function buildPost(data) {
 
 
 getPosts(postURI);
-
 
