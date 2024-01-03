@@ -29,6 +29,7 @@ function buildPost(data) {
     </div>`;
     for (let post of data.items) {
         let postDate = new Date(post.lastPublishedDate).toDateString();
+        let truncatedText = post.plainContent.substring(0, 300)
         postHTML +=
             `<div class="blog-wrapper">
                     <div class="blog-header" id="${post._id}">
@@ -39,18 +40,8 @@ function buildPost(data) {
                         </div>
                     </div>
                     <div class="blog-text">
-                        <p class="text">${post.plainContent.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
-                    </div>
-                    <div class="analytics">
-                        <div class="view-count">
-                            ${post.viewCount} views
-                        </div>
-                        <div class="like-count">
-                            ${post.likeCount} likes
-                        </div>
-                        <button class="like-button">
-                            💖
-                        </button>
+                        <p class="text fade">${truncatedText.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
+                         <a href="/details.html?post=${post.slug}"><b>see more...</b></a>
                     </div>
             </div>`;
     }
