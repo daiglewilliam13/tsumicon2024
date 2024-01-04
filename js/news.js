@@ -28,6 +28,7 @@ const addCopyFuction = (elArray) => {
     elArray.forEach((el) => {
         el.addEventListener('click', function () {
             copyToClipboard(el.previousElementSibling.value)
+            el.previousElementSibling.select();
             el.nextSibling.nodeValue = "Link Copied!"
         })
     })
