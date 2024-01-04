@@ -20,6 +20,19 @@ async function getPosts(url) {
     }
 }
 
+const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text)
+
+}
+const addCopyFuction = (elArray) => {
+    elArray.forEach((el) => {
+        el.addEventListener('click', function () {
+            copyToClipboard(el.previousElementSibling.value)
+            el.nextSibling.nodeValue = "Link Copied!"
+        })
+    })
+}
+
 function buildPost(data) {
     let postHTML = `
     <div class="sub-hero">
@@ -41,12 +54,14 @@ function buildPost(data) {
                     </div>
                     <div class="blog-text">
                         <p class="text fade">${truncatedText.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
-                         <a href="/details.html?post=${post.slug}"><b>see more...</b></a>
+                        <p><a href="/details.html?post=${post.slug}"><b>see more...</b></a></p> 
+                        <p><input value="https://www.tsumicon.com/news/details/html?post=${post.slug}"></input> <img src="../images/copy-icon.png" class="copy-icon">Share<p>
                     </div>
             </div>`;
     }
     document.getElementById('blogs').innerHTML = postHTML;
-
+    let copyButtons = Array.from(document.getElementsByClassName('copy-icon'))
+    addCopyFuction(copyButtons);
 }
 
 
