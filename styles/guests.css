@@ -1,40 +1,120 @@
 #guest-list {
-    margin: 10rem auto;
-    width: 100%;
-}
-
-.image-wrapper {
-    display: relative;
-    filter: grayscale(0%)
-}
-
-.badge-wrapper {
-    position: absolute;
-    z-index: 999;
-    display: flex;
-    width: 135%;
-    flex-wrap: wrap;
-    top: 11rem;
-    justify-content: space-between;
-}
-
-.badge {
-    background-color: #2D3142;
-    color: white;
-    margin: 2px;
-    padding: 0 3px;
-    font-size: .9rem;
-    box-shadow: 0px 0px 10px -2px black;
+    margin-top: 10rem;
 }
 
 .guest-card-wrapper {
-    height: 8rem;
-    width: 6rem;
-    margin: 5rem 2rem;
+    position: relative;
+    background-color: whitesmoke;
+    width: 20rem;
+    height: 25rem;
+    margin: 1rem;
+    z-index: 0;
+    transition: 450ms;
+    overflow: hidden;
+
 }
 
-.card-frame {
-    height: 11rem;
+.guest-card-wrapper:hover .accent-block {
+    width: 50%;
+    height: 75%;
+    transition: 450ms ease-in-out;
+
+}
+
+.guest-card-wrapper:hover .guest-details {
+    top: 75%;
+    width: 90%;
+    transition: 450ms ease-in-out;
+}
+
+.guest-card-wrapper:hover .guest-name {
+    width: 0;
+    transition: 450ms ease-in-out;
+}
+
+.guest-card-wrapper:hover .socials-icon {
+    margin-bottom: 1rem;
+    transition: 450ms ease;
+}
+
+.guest-card-wrapper:hover .card-image {
+    width: 80%;
+    height: 90%;
+    transition: 450ms ease-in-out;
+}
+
+.socials-icon {
+    height: 2rem;
+    margin-bottom: .5rem;
+    transition: 450ms;
+}
+
+.socials-icon:hover {
+    filter: drop-shadow(5px 5px 10px #070707);
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    left: 1rem;
+    top: 1rem;
+
+}
+
+.accent-block {
+    position: absolute;
+    z-index: 1;
+    height: 70%;
+    width: 80%;
+    background-color: #710c04;
+    transition: 450ms;
+
+
+}
+
+.card-image {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    transition: 450ms;
+}
+
+.guest-details {
+    position: relative;
+    width: 60%;
+    z-index: 3;
+    top: 60%;
+    background-color: #070707;
+    transition: 450ms;
+    padding: .5rem 1rem;
+}
+
+.guest-name {
+    width: 100%;
+    margin: 0;
+    transition: 450ms;
+    font-family: 'BarlowSemiCondensed-Bold';
+}
+
+.badge-wrapper {
+    width: 100%;
+    transition: 450ms;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-block;
+    margin: 2px;
+    border: 1px solid whitesmoke;
+    padding: 2px;
 }
 
 .black-bar {
@@ -45,29 +125,14 @@
 .guest-list {
     max-width: 1600px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-@media screen and (min-width: 720px) {
-    .guest-card-wrapper {
-        height: 20rem;
-        width: 15rem;
-        margin: 3rem;
-        position: relative;
-    }
-
-    .card-frame {
-        height: auto;
-    }
-
-    .image-wrapper {
-        filter: grayscale(100%);
-    }
-
-    .badge-wrapper {
-        flex-direction: row;
-        width: 90%;
-        top: auto;
-        bottom: .5rem;
-        justify-content: flex-start;
-    }
+.guest-name {
+    font-size: 1.5rem;
 }
+
+@media screen and (min-width: 720px) {}

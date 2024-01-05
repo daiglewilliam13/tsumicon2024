@@ -9,6 +9,11 @@
     src: url('fonts/barlow-semi-condensed/BarlowSemiCondensed-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "BarlowSemiCondensed-Bold";
+    src: url('fonts/barlow-semi-condensed/BarlowSemiCondensed-Bold.ttf') format('truetype');
+}
+
 html {
     font-size: 1rem;
     overflow-x: hidden;

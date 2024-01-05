@@ -1,78 +1,3 @@
-.guest-card-wrapper {
-    height: 20rem;
-    width: 15rem;
-    margin: 3rem;
-    position: relative;
-}
-
-.guest-page-link:hover .image-wrapper {
-    transition: 200ms;
-    filter: grayscale(0%);
-    transform: scale(1.05);
-
-}
-
-.image-wrapper:hover img.card-image {
-    transition: 2s;
-    cursor: pointer;
-    animation: shimmer 300ms 1 ease-in-out forwards;
-}
-
-.image-wrapper {
-    transition: 100ms;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    filter: grayscale(100%);
-
-
-}
-
-.card-frame {
-    position: absolute;
-    bottom: -4rem;
-    right: -2rem;
-}
-
-img.card-image {
-    box-sizing: border-box;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    background-repeat: no-repeat;
-    mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
-
-
-}
-
-@keyframes shimmer {
-
-    100% {
-        -webkit-mask-position: left
-    }
-}
-
-.guest-name-wrapper {
-    position: relative;
-    padding: .3rem 1rem;
-    background-color: white;
-    color: black;
-    margin: .5rem 0 0 0;
-}
-
-.guest-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: -2rem;
-    padding-bottom: 3rem;
-}
-
-
 #hero {
     margin: 7rem 0 2rem 0;
     min-height: calc(100vh - 7rem);
@@ -265,15 +190,6 @@ img.location-icon {
         width: 100%;
     }
 
-    .guest-list {
-        justify-content: center;
-    }
-
-    .guest-card-wrapper {
-        margin: 3rem;
-        width: 5rem;
-        height: 7rem;
-    }
 
     .card-frame {
         height: 10rem;
