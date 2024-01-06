@@ -5,8 +5,8 @@
 .guest-card-wrapper {
     position: relative;
     background-color: whitesmoke;
-    width: 20rem;
-    height: 25rem;
+    width: 22rem;
+    height: 22rem;
     margin: 1rem;
     z-index: 0;
     transition: 450ms;
@@ -16,13 +16,13 @@
 
 .guest-card-wrapper:hover .accent-block {
     width: 50%;
-    height: 75%;
+    height: 80%;
     transition: 450ms ease-in-out;
 
 }
 
 .guest-card-wrapper:hover .guest-details {
-    top: 75%;
+    top: 80%;
     width: 90%;
     transition: 450ms ease-in-out;
 }
@@ -30,6 +30,7 @@
 .guest-card-wrapper:hover .guest-name {
     width: 0;
     transition: 450ms ease-in-out;
+
 }
 
 .guest-card-wrapper:hover .socials-icon {
@@ -38,7 +39,7 @@
 }
 
 .guest-card-wrapper:hover .card-image {
-    width: 80%;
+    width: 90%;
     height: 90%;
     transition: 450ms ease-in-out;
 }
@@ -67,17 +68,15 @@
 .accent-block {
     position: absolute;
     z-index: 1;
-    height: 70%;
+    height: 80%;
     width: 80%;
     background-color: #710c04;
     transition: 450ms;
-
-
 }
 
 .card-image {
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 80%;
     z-index: 2;
     bottom: 0;
@@ -90,7 +89,7 @@
     position: relative;
     width: 60%;
     z-index: 3;
-    top: 60%;
+    top: 70%;
     background-color: #070707;
     transition: 450ms;
     padding: .5rem 1rem;
@@ -101,6 +100,7 @@
     margin: 0;
     transition: 450ms;
     font-family: 'BarlowSemiCondensed-Bold';
+    white-space: nowrap;
 }
 
 .badge-wrapper {
