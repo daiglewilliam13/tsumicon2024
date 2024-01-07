@@ -52,18 +52,25 @@
         </section>
         <section id="guest-list">
             <div class="sub-hero">
-                <h1 class="page-title">Full Guest List</h1>
-                <p class="sub-hero-text"><button class="cta-button">See Full List Below</button></p>
+                <h1 class="page-title">Tsumicon Guests!</h1>
+                <p class="sub-hero-text">Choose a section below to see more guests!</p>
                 <img class="measure-marks-bottom" src="../images/measure lines.png">
             </div>
             <div class="black-bar">
                 <img class="top-left-triangle" src="../images/top-left-triangle.png">
-                <div class="goh">
+                <div id="menu-selector">
+                    <ul id="guest-selectors">
+                        <button data-select="goh" class="list-selector selected">Guest of Honor</button>
+                        <button data-select="voice-actors" class="list-selector">Voice Actors</button>
+                        <button data-select="special-guests" class="list-selector">Special Guests</button>
+                    </ul>
+                </div>
+                <div id="goh" class="show guest-dropdown">
                     <div class="guest-header">
-                        <h1>Guest of Honor: Bishoujo Mom</h1>
+                        <h1 class="list-section-title">Guest of Honor: Bishoujo Mom</h1>
                     </div>
                     <div class="guest-list">
-                        <div class="guest-card-wrapper">
+                        <div class="guest-card-wrapper fade-in">
                             <div class="accent-block">
                             </div>
                             <div class="guest-details">
@@ -74,129 +81,153 @@
                             </video>
                         </div>
                     </div>
-                    <div class="voice-actors">
-                        <div class="guest-header">
-                            <h1>Voice Actors</h1>
+                </div>
+                <div id="voice-actors" class="guest-dropdown">
+                    <div class="guest-header">
+                        <h1 class="list-section-title">Voice Actors</h1>
+                    </div>
+                    <div class="guest-list">
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Blake Shepard</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/blake shepard edit.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <div class="guest-list">
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Blake Shepard</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/blake shepard edit.mp4" type="video/mp4">
-                                </video>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
                             </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Aaron Campbell</div>
-                                </div>
-                                <video class="card-image" autoplay muted>
-                                    <source src="/videos/aaron campbell edit.mp4" type="video/mp4">
-                                </video>
+                            <div class="guest-details">
+                                <div class="guest-name">Aaron Campbell</div>
                             </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Britney Karbowski</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/brittney karbowski edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Christina Kelly</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/christina kelly edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Christine Auten</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/christine auten edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Juliet Simmons</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/juliet simmons edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Leraldo Anzaldua</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/leraldo anzualdua edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Mike McFarland</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/mike mcfarland edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="guest-card-wrapper">
-                                <div class="accent-block">
-                                </div>
-                                <div class="guest-details">
-                                    <div class="guest-name">Molly Searcy</div>
-                                </div>
-                                <video class="card-image" muted>
-                                    <source src="/videos/molly searcy edit.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                            <video class="card-image" autoplay muted>
+                                <source src="/videos/aaron campbell edit.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <div class="special-guests guest-dropdown">
-                            <div class="guest-list">
-                                <div class="guest-card-wrapper">
-                                    <div class="accent-block">
-                                    </div>
-                                    <video class="card-image" muted>
-                                        <source src="/videos/Blake Shepard(1).mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="guest-card-wrapper">
-                                    <div class="accent-block">
-                                    </div>
-                                    <video class="card-image" muted>
-                                        <source src="/videos/Blake Shepard(1).mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="guest-card-wrapper">
-                                    <div class="accent-block">
-                                    </div>
-                                    <video class="card-image" muted>
-                                        <source src="/videos/Blake Shepard(1).mov" type="video/mp4">
-                                    </video>
-                                </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
                             </div>
-
-                            <img class="right-corner-lines" src="../images/triangle and lines corner.svg">
+                            <div class="guest-details">
+                                <div class="guest-name">Britney Karbowski</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/brittney karbowski edit.mp4" type="video/mp4">
+                            </video>
                         </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Christina Kelly</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/christina kelly edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Christine Auten</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/christine auten edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Juliet Simmons</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/juliet simmons edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Leraldo Anzaldua</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/leraldo anzualdua edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Mike McFarland</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/mike mcfarland edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Molly Searcy</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/molly searcy edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div id="special-guests" class="guest-dropdown">
+                    <div class="guest-header">
+                        <h1 class="list-section-title">Special Guests</h1>
+                    </div>
+                    <div class="guest-list">
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Molly Searcy</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/molly searcy edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Molly Searcy</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/blake shepard edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Molly Searcy</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/blake shepard edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="guest-card-wrapper">
+                            <div class="accent-block">
+                            </div>
+                            <div class="guest-details">
+                                <div class="guest-name">Molly Searcy</div>
+                            </div>
+                            <video class="card-image" muted>
+                                <source src="/videos/blake shepard edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <img class="right-corner-lines" src="../images/triangle and lines corner.svg">
+            </div>
         </section>
         <section id="footer">
             <div id="bottom-navbar">

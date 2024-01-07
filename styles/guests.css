@@ -2,6 +2,46 @@
     margin-top: 10rem;
 }
 
+.divider {
+    height: 5px;
+    width: 50%;
+    background-color: whitesmoke;
+    margin: auto 0;
+}
+
+.list-section-title {
+    font-size: 4rem;
+    font-family: 'BarlowSemiCondensed-Bold';
+    margin: 0 auto;
+}
+
+.guest-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#guest-selectors {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.list-selector {
+    flex-grow: 1;
+    margin: .5rem;
+    box-sizing: border-box;
+}
+
+#menu-selector {
+    margin: 2rem auto;
+}
+
 .guest-card-wrapper {
     position: relative;
     background-color: whitesmoke;
@@ -11,19 +51,19 @@
     z-index: 0;
     transition: 450ms;
     overflow: hidden;
-
+    opacity: 0;
 }
 
 .guest-card-wrapper:hover .accent-block {
     width: 50%;
-    height: 80%;
+    height: 90%;
     transition: 450ms ease-in-out;
 
 }
 
 .guest-card-wrapper:hover .guest-details {
-    top: 80%;
-    width: 90%;
+    top: 90%;
+    width: 100%;
     transition: 450ms ease-in-out;
 }
 
@@ -42,6 +82,7 @@
     width: 90%;
     height: 90%;
     transition: 450ms ease-in-out;
+    filter: brightness(100%);
 }
 
 .socials-icon {
@@ -65,6 +106,7 @@
 
 }
 
+
 .accent-block {
     position: absolute;
     z-index: 1;
@@ -83,6 +125,7 @@
     right: 0;
     object-fit: cover;
     transition: 450ms;
+    filter: brightness(50%);
 }
 
 .guest-details {
@@ -118,6 +161,7 @@
 }
 
 .black-bar {
+    padding-top: 3rem;
     margin-top: 3rem;
     width: 100%;
 }
@@ -133,6 +177,37 @@
 
 .guest-name {
     font-size: 1.5rem;
+}
+
+.guest-dropdown {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.show {
+    opacity: 1;
+    height: 100%;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (min-width: 720px) {}

@@ -47,7 +47,8 @@ div#background-filter {
     margin: 0;
 }
 
-button:hover {
+button:hover,
+.selected {
     transition: 200ms;
     cursor: pointer;
     color: white;
