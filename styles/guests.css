@@ -116,6 +116,18 @@
     transition: 450ms;
 }
 
+.accent-block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-image: url('/images/logo\ white\ tight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .card-image {
     position: absolute;
     width: 80%;
