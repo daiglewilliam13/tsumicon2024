@@ -1,9 +1,7 @@
-console.log('connected guests.js')
 
 let cards = Array.from(document.getElementsByClassName('guest-card-wrapper'));
 let selectors = Array.from(document.getElementById('guest-selectors').children);
 let sections = Array.from(document.getElementsByClassName('guest-dropdown'));
-console.log(selectors);
 
 
 cards.forEach((card) => {
