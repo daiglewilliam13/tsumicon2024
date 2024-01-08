@@ -6,11 +6,18 @@ let sections = Array.from(document.getElementsByClassName('guest-dropdown'));
 
 cards.forEach((card) => {
     let video = card.children[2];
-    card.addEventListener('mouseover', function () {
-        video.play();
-    })
-    card.addEventListener('mouseout', function () {
-        video.pause();
+    video.addEventListener('loadeddata', function () {
+        if (video.readyState = 4) {
+            console.log(video, " is ready")
+            card.addEventListener('mouseover', function () {
+                video.play();
+            })
+            card.addEventListener('mouseout', function () {
+                video.pause();
+            })
+
+        }
+
     })
 })
 
