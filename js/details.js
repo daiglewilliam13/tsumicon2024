@@ -31,17 +31,6 @@ const buildPost = (post) => {
                     <div class="blog-text">
                         <p class="text">${post.plainContent.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
                     </div>
-                    <div class="analytics">
-                        <div class="view-count">
-                            ${post.viewCount} views
-                        </div>
-                        <div class="like-count">
-                            ${post.likeCount} likes
-                        </div>
-                        <button class="like-button">
-                            💖
-                        </button>
-                    </div>
             </div>`
     document.getElementById('blog-details').innerHTML = postHTML;
 
