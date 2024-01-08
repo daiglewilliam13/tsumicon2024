@@ -59,3 +59,6 @@ selectors.forEach((el) => {
     //cycle through divs and change from show to hide
 
 })
+
+let video = document.getElementById('goh-card').children[2];
+console.log(video);
