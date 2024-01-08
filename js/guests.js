@@ -7,8 +7,7 @@ let sections = Array.from(document.getElementsByClassName('guest-dropdown'));
 cards.forEach((card) => {
     let video = card.children[2];
     video.addEventListener('loadeddata', function () {
-        if (video.readyState = 4) {
-            console.log(video, " is ready")
+        if (video.readyState > 3) {
             card.addEventListener('mouseover', function () {
                 video.play();
             })

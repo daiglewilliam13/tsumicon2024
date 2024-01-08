@@ -32,16 +32,6 @@
     padding: 0;
 }
 
-.loading-filter::after {
-    content: 'Loading...';
-    position: absolute;
-    height: 100rem;
-    width: 100rem;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    display: block;
-}
 
 .list-selector {
     flex-grow: 1;
@@ -68,6 +58,14 @@
 #goh-card {
     height: 35rem;
     width: 35rem;
+}
+
+#goh-card .guest-details {
+    top: 75%;
+}
+
+#goh-card:hover .guest-details {
+    top: 90%;
 }
 
 .guest-card-wrapper:hover .accent-block {
