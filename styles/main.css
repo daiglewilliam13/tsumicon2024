@@ -72,7 +72,7 @@ div#background-filter {
 
 a.cta-button:hover,
 .cta-button:hover,
-.selected {
+button.selected {
     transition: 200ms;
     cursor: pointer;
     color: white;
