@@ -29,7 +29,7 @@
     box-sizing: border-box;
 }
 
-a.cta-button+.disabled {
+a.cta-button.disabled {
     filter: grayscale(1);
     background-color: grey;
     cursor: not-allowed;
