@@ -21,8 +21,9 @@ let submitEmailURL = "https://tsumicon.wixsite.com/my-site/_functions/mailingLis
 let canSubmit = true;
 let dateOptions = { year: 'numeric', month: 'short', hc: 'h12', hour: 'numeric', minute: '2-digit' }
 const submitEmail = () => {
+    let input = document.getElementById('email-input');
     let currentTime = Date();
-    if (canSubmit) {
+    if (canSubmit && input.length > 0) {
         canSubmit = false
         let emailAddress = document.getElementById('email-input');
         const button = document.getElementById('email-submit');
@@ -54,10 +55,9 @@ const submitEmail = () => {
                 }, 5000)
             });
     } else {
-        alert("You must wait a bit");
+        alert("You must wait a bit or enter a valid email address");
     }
 }
-
 const testFunction = () => {
     alert('it worked');
 }

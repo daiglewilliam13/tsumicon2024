@@ -28,6 +28,10 @@ body {
     font-family: "BarlowSemiCondensed-Light";
 }
 
+a.cta-button:visited {
+    color: black;
+}
+
 div#background-filter {
     height: 100vh;
     width: 100vw;
@@ -47,7 +51,18 @@ div#background-filter {
     margin: 0;
 }
 
-button:hover,
+#top-navbar .cta-button {
+    padding: 1rem;
+    color: black;
+    text-shadow: none;
+}
+
+#top-navbar .cta-button:hover {
+    color: white;
+}
+
+a.cta-button:hover,
+.cta-button:hover,
 .selected {
     transition: 200ms;
     cursor: pointer;
@@ -56,13 +71,16 @@ button:hover,
     box-shadow: 0px 0px 10px 1px #710c04;
 }
 
-button:hover img.chevron-icon {
+
+.cta-button:hover img.chevron-icon {
     transition: 200ms;
     filter: invert(1);
     animation: spin 200ms ease-out;
 }
 
-button {
+a.cta-button,
+.cta-button {
+    text-decoration: none;
     transition: 200ms;
     background-color: white;
     border-radius: 0;
@@ -70,7 +88,8 @@ button {
     padding: 1rem;
     font-size: 1rem;
     white-space: nowrap;
-
+    margin: 1rem;
+    display: inline-block;
 }
 
 img.chevron-icon {
@@ -207,6 +226,7 @@ div.black-bar {
     width: 70vw;
     padding: 1rem 0 0 2rem;
     display: flex;
+    box-sizing: border-box;
 }
 
 .measure-marks-bottom {

@@ -109,11 +109,11 @@ img.location-icon {
     padding: 0 1rem;
 }
 
-#hero-button {
-    height: 4rem;
+#hero-button-wrapper .cta-button {
     min-width: 20%;
-    margin: 1rem 0 2rem 1rem;
+    text-align: center;
 }
+
 
 #main-content {
     margin: 3rem 0 0 0;
