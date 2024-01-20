@@ -32,6 +32,15 @@ a.cta-button:visited {
     color: black;
 }
 
+a {
+    color: black;
+}
+
+.sub-hero .cta-button {
+    position: relative;
+    z-index: 3;
+}
+
 div#background-filter {
     height: 100vh;
     width: 100vw;
