@@ -45,5 +45,7 @@ a.cta-button.disabled {
 }
 
 #eventbrite-widget-container-737467062837 {
-    margin-bottom: 4rem;
+    margin: 0 auto;
+    max-width: 2040px;
+
 }
