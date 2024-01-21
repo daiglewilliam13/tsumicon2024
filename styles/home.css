@@ -119,24 +119,12 @@ img.location-icon {
     margin: 3rem 0 0 0;
 }
 
-#mobile-video {
-    display: none;
-}
 
-#desk-video {
-    display: block;
-}
 
 
 @media screen and (max-width: 1000px) {
 
-    #desk-video {
-        display: none;
-    }
 
-    #mobile-video {
-        display: block;
-    }
 
     .left-barcode,
     .right-barcode {
@@ -199,7 +187,7 @@ img.location-icon {
     #hero-video-wrapper video {
         height: 100vh;
         min-height: 0;
-        object-fit: fill;
+
     }
 
     #hero {
