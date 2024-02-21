@@ -59,8 +59,8 @@ img.sponsor-logo {
 #senpai {}
 
 #otaku {
-    height: 30px;
-    padding-top: 9px;
+    max-height: 30px;
+    padding-bottom: 9px;
 }
 
 #sponsor-wrapper {
@@ -127,21 +127,15 @@ img.location-icon {
         transition: 100ms;
     }
 
-    img.sponsor-logo {
-        height: 2rem;
-        width: auto;
-        margin: 0;
-    }
+    img.sponsor-logo {}
 
-    #senpai {
-        height: 2rem;
-        width: auto;
-        margin: 0;
-    }
+    #senpai {}
 
-    #otaku {
-        height: 1rem;
-        width: auto;
+    #otaku {}
+
+    #sake-wrapper {
+        height: 3rem;
+        margin: 0;
     }
 
     .bar-text {
