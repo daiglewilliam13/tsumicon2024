@@ -71,16 +71,15 @@ img.sponsor-logo {
     box-sizing: border-box;
     width: calc(100% - 8rem);
     align-items: end;
-
+    max-width: 1200px;
 }
 
 #sake-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 3rem;
     padding-bottom: 12px;
-    padding-right: .5rem;
 }
 
 #sake-by {
