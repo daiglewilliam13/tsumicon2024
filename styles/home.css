@@ -53,13 +53,13 @@
 }
 
 img.sponsor-logo {
-    margin: 0 .5rem;
+    margin: 0 1rem;
 }
 
 #senpai {}
 
 #otaku {
-    max-height: 30px;
+    max-height: 2rem;
     padding-bottom: 9px;
 }
 
@@ -67,18 +67,29 @@ img.sponsor-logo {
     display: flex;
     position: absolute;
     z-index: -1;
-    bottom: 0;
+    bottom: 1rem;
     box-sizing: border-box;
     width: calc(100% - 8rem);
     align-items: end;
-    padding: 0 1rem 1rem 0;
+
 }
 
 #sake-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 12px;
+    padding-right: .5rem;
+}
+
+#sake-by {
+    height: .9rem;
+}
+
+#sake-logo {
+    object-fit: contain;
+    height: 10rem;
 }
 
 .bar-text-2 {
@@ -127,14 +138,24 @@ img.location-icon {
         transition: 100ms;
     }
 
-    img.sponsor-logo {}
+    img.sponsor-logo {
+        height: 2.5rem;
+    }
 
     #senpai {}
 
-    #otaku {}
+    #otaku {
+        height: 1.6rem;
+    }
 
-    #sake-wrapper {
-        margin: 0;
+    #sake-wrapper {}
+
+    #sake-logo {
+        height: 8rem;
+    }
+
+    #sake-by {
+        height: .7rem;
     }
 
     .bar-text {
@@ -145,7 +166,7 @@ img.location-icon {
 
     #sponsor-wrapper {
         margin: 0;
-        bottom: 1rem;
+        bottom: 2rem;
         left: 0;
         width: 100%;
     }
