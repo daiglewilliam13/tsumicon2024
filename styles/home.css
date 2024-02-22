@@ -1,10 +1,8 @@
 #hero {
-    margin: 7rem 0 2rem 0;
+    padding-top: 7rem;
     width: 100%;
-
+    height: calc(100% - 7rem);
 }
-
-
 
 #hero-information {
     margin: 0;
@@ -15,7 +13,9 @@
     background-color: rgba(0, 0, 0, .5);
     animation-delay: 30s;
     opacity: 1;
-    min-height: 100vh;
+    min-height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
 }
 
 #hero-headline {
@@ -29,20 +29,18 @@
 
 #hero-video-wrapper {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     z-index: 0;
     top: 0;
     height: 100%;
+    width: 100%;
 }
 
 #hero-video-wrapper video {
     object-fit: cover;
-
 }
 
 #hero-logo {
-    position: absolute;
-    z-index: -1;
     left: 0;
     bottom: 0;
     opacity: .1;
@@ -64,21 +62,19 @@ img.tsumi-logo {
 
 #tsumi-wrapper {
     display: flex;
-    position: absolute;
-    z-index: -1;
-    bottom: 1rem;
     box-sizing: border-box;
-    width: calc(100% - 8rem);
+    width: 100%;
+    margin-top: auto;
     align-items: end;
-    margin-right: 8rem;
 }
+
 
 #sake-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: 8rem;
-    padding-bottom: 12px;
+    position: absolute;
+    right: 8rem;
+    bottom: .8rem;
 }
 
 #sake-by {
@@ -120,9 +116,13 @@ img.location-icon {
     transition: 200ms;
 }
 
+#bg-wrapper {
+    background-image: url('../images/bg.jpg');
+    position: relative;
+}
 
 #main-content {
-    margin: 3rem 0 0 0;
+    padding-top: 3rem;
 }
 
 
@@ -142,14 +142,16 @@ img.location-icon {
         height: 2.5rem;
     }
 
-    #senpai {}
+    #partner-wrapper {
+        width: 50%;
+    }
 
     #otaku {
         height: 1.6rem;
     }
 
     #sake-wrapper {
-        margin-right: 4rem;
+        margin-right: 1rem;
     }
 
     #sake-logo {
@@ -162,15 +164,6 @@ img.location-icon {
 
     .bar-text {
         width: 100%;
-    }
-
-    #partner-wrapper {}
-
-    #tsumi-wrapper {
-        margin: 0;
-        bottom: 2rem;
-        left: 0;
-        margin: 0 1rem;
     }
 
     .bar-info-right {
@@ -195,22 +188,17 @@ img.location-icon {
         left: -1rem
     }
 
-    #hero-video-wrapper video {
-        height: 100vh;
-        min-height: 0;
 
-    }
 
     #hero {
-        margin: 5rem 0 0 0;
+        padding-top: 5rem;
     }
 
     #hero-information {
         width: 100%;
         /* text-align: left; */
         padding: 0;
-        height: calc(100vh - 5rem);
-
+        min-height: calc(100vh - 5rem);
         transition: 200ms;
     }
 
