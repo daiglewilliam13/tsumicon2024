@@ -121,7 +121,7 @@ img.location-icon {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-color: white;
+    background-color: rgb(46, 46, 46);
 }
 
 #main-content {
