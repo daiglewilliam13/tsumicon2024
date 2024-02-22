@@ -25,12 +25,12 @@ let changeTab = (event, tabName) => {
 window.changeTab = changeTab;
 
 //populate vendors
-let vendorList = ""
 // <div class="vendor-wrapper">
 //     <p></p>
 //     <p></p>
 // </div>
 
+let vendorList = ""
 vendors.forEach((vendor) => {
     vendorList += `<div class="vendor-wrapper">
          <p>${vendor}</p>
@@ -42,7 +42,6 @@ vendorListWrapper.innerHTML = vendorList;
 
 //populate artist alley 
 let artistList = ""
-
 artistAlley.forEach((artist) => {
     artistList += `<div class="vendor-wrapper">
          <p>${artist}</p>
