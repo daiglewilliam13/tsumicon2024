@@ -52,7 +52,7 @@
 
 }
 
-img.sponsor-logo {
+img.tsumi-logo {
     margin: 0 1rem;
 }
 
@@ -63,7 +63,7 @@ img.sponsor-logo {
     padding-bottom: 9px;
 }
 
-#sponsor-wrapper {
+#tsumi-wrapper {
     display: flex;
     position: absolute;
     z-index: -1;
@@ -137,7 +137,7 @@ img.location-icon {
         transition: 100ms;
     }
 
-    img.sponsor-logo {
+    img.tsumi-logo {
         height: 2.5rem;
     }
 
@@ -165,7 +165,7 @@ img.location-icon {
 
     #partner-wrapper {}
 
-    #sponsor-wrapper {
+    #tsumi-wrapper {
         margin: 0;
         bottom: 2rem;
         left: 0;
