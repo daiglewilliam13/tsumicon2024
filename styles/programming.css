@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'adensor';
+    src: url('fonts/adensor.ttf');
+}
+
 #programming {
     margin-top: 10rem;
 }
@@ -92,7 +97,6 @@
 
 .vendor-wrapper p {
     font-family: 'adensor';
-    src: url('fonts/adensor.ttf') format('truetype');
     margin: 0;
     font-size: 3rem;
     padding: 0 1rem;
