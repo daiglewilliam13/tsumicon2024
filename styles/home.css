@@ -73,7 +73,7 @@ img.tsumi-logo {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 8rem;
+    right: 10rem;
     bottom: .8rem;
 }
 
@@ -151,7 +151,7 @@ img.location-icon {
     }
 
     #sake-wrapper {
-        margin-right: 1rem;
+        right: 1rem;
     }
 
     #sake-logo {
