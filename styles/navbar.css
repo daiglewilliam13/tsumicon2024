@@ -29,7 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #top-navbar:hover {
@@ -118,7 +118,7 @@
         justify-content: flex-start;
         align-items: center;
         padding: 2rem 2rem 2rem 4rem;
-
+        overflow: hidden;
         background-color: rgba(0, 0, 0, .5);
     }
 
