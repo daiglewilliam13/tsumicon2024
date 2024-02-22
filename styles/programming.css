@@ -93,6 +93,7 @@
     background-color: white;
     color: black;
     margin: 0;
+    margin-bottom: .5rem;
 }
 
 .vendor-wrapper p {
@@ -100,4 +101,5 @@
     margin: 0;
     font-size: 3rem;
     padding: 0 1rem;
+    padding-top: .5rem;
 }
