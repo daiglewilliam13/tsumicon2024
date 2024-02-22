@@ -1,4 +1,6 @@
 import { vendors } from './vendors.js';
+import { artistAlley } from './vendors.js';
+
 console.log('programming.js connected');
 let changeTab = (event, tabName) => {
     let tabLinks = document.getElementsByClassName('tab');
@@ -21,6 +23,8 @@ let changeTab = (event, tabName) => {
     }
 }
 window.changeTab = changeTab;
+
+//populate vendors
 let vendorList = ""
 // <div class="vendor-wrapper">
 //     <p></p>
@@ -33,6 +37,21 @@ vendors.forEach((vendor) => {
          <p>Booth#: TBD</p>
  </div>`
 })
+let vendorListWrapper = document.getElementById('vendor-list');
+vendorListWrapper.innerHTML = vendorList;
 
-let listWrapper = document.getElementById('vendor-list');
-listWrapper.innerHTML = vendorList;
+//populate artist alley 
+let artistList = ""
+
+artistAlley.forEach((artist) => {
+    artistList += `<div class="vendor-wrapper">
+         <p>${artist}</p>
+         <p>Booth#: TBD</p>
+ </div>`
+})
+
+let artistListWrapper = document.getElementById('artist-list');
+artistListWrapper.innerHTML = artistList;
+
+
+

@@ -60,7 +60,8 @@
     animation: slide-in 200ms forwards 1 ease-in-out;
 }
 
-#vendor-list {
+#vendor-list,
+#artist-list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;

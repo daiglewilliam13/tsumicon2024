@@ -38,3 +38,40 @@ export let vendors = [
     'BloodArtisan',
     'Mangahole'
 ]
+
+export let artistAlley = [
+
+    'ZRStudio',
+    'Carlos Arts',
+    'nightdigital',
+    'Yarn Bubbles',
+    'hadokoa.contrast',
+    'Lethal Bliss',
+    'Iridescent manga',
+    'Lexxie Lynn',
+    'Starberri Kai',
+    'Hyperbooster',
+    'Mikela Kim',
+    'Livinglegacyshop',
+    'mestizamakes',
+    'zzyzzyyart',
+    'Cute and Deadly',
+    'Story Teller Cosplayy',
+    'Deviousdrawing',
+    'YamiWave',
+    'mtsugarr',
+    'theimaginaryking',
+    'Crafty Hedonest',
+    'DentelleElysee',
+    'Golden Koi Designs',
+    'EckoEckos',
+    'Heartwerm',
+    'Die Sentai',
+    'scribble squab',
+    'Cyanidecady',
+    'Soul Tooth',
+    'Sakimi Chan',
+    'nichiyoubi.art',
+    'x3dustco',
+
+]
