@@ -1,6 +1,5 @@
 #hero {
     margin: 7rem 0 2rem 0;
-    min-height: calc(100vh - 7rem);
     width: 100%;
 
 }
@@ -10,19 +9,21 @@
 #hero-information {
     margin: 0;
     color: white;
-    min-height: calc(100vh - 7rem);
     padding: 0 1rem 0 8rem;
     position: relative;
     z-index: 1;
     background-color: rgba(0, 0, 0, .5);
-    /* animation: slide-in 2s forwards ease-in-out; */
     animation-delay: 30s;
     opacity: 1;
+    min-height: 100vh;
 }
 
 #hero-headline {
-    width: 40rem;
-    margin: 2rem auto;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    box-sizing: border-box;
+    transition: 200ms;
 
 }
 
@@ -31,24 +32,22 @@
     position: absolute;
     z-index: 0;
     top: 0;
-    width: 100%;
+    height: 100%;
 }
 
 #hero-video-wrapper video {
-    height: 100vh;
-    min-height: 47rem;
     object-fit: cover;
-    width: 100%;
 
 }
 
 #hero-logo {
     position: absolute;
     z-index: -1;
-    height: 40rem;
     left: 0;
     bottom: 0;
     opacity: .1;
+    width: 100%;
+    max-width: 600px;
 
 }
 
@@ -112,11 +111,13 @@ img.location-icon {
     font-size: 1.5rem;
     margin: 1rem 0;
     padding: 0 1rem;
+    transition: 200ms;
 }
 
 #hero-button-wrapper .cta-button {
     min-width: 20%;
     text-align: center;
+    transition: 200ms;
 }
 
 
@@ -206,15 +207,11 @@ img.location-icon {
 
     #hero-information {
         width: 100%;
-        text-align: left;
+        /* text-align: left; */
         padding: 0;
         height: calc(100vh - 5rem);
 
-
-    }
-
-    #hero-logo {
-        height: 25rem;
+        transition: 200ms;
     }
 
     .event-card {
@@ -230,11 +227,6 @@ img.location-icon {
     .hero-text {
         padding: 0;
 
-    }
-
-    #hero-headline {
-        width: 90%;
-        margin: 0 1rem;
     }
 
     #hero-details {
