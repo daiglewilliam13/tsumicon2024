@@ -1,6 +1,6 @@
+import { vendors } from './vendors.js';
 console.log('programming.js connected');
-
-changeTab = (event, tabName) => {
+let changeTab = (event, tabName) => {
     let tabLinks = document.getElementsByClassName('tab');
     for (let i = 0; i < tabLinks.length; i++) {
         if (tabLinks[i].innerText === event.target.innerText) {
@@ -20,3 +20,19 @@ changeTab = (event, tabName) => {
         }
     }
 }
+window.changeTab = changeTab;
+let vendorList = ""
+// <div class="vendor-wrapper">
+//     <p></p>
+//     <p></p>
+// </div>
+
+vendors.forEach((vendor) => {
+    vendorList += `<div class="vendor-wrapper">
+         <p>${vendor}</p>
+         <p>Booth#: TBD</p>
+ </div>`
+})
+
+let listWrapper = document.getElementById('vendor-list');
+listWrapper.innerHTML = vendorList;

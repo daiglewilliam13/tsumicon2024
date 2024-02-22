@@ -59,3 +59,39 @@
     margin-top: 2rem;
     animation: slide-in 200ms forwards 1 ease-in-out;
 }
+
+#vendor-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.vendor-wrapper {
+    margin: 0 3rem;
+    margin-top: 3rem;
+    text-align: left;
+    width: 100%;
+    max-width: 25rem;
+    transition: 250ms;
+}
+
+.vendor-wrapper:hover {
+    box-shadow: 0px 15px 15px -15px #710c04;
+}
+
+
+.vendor-wrapper p:first-child {
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+.vendor-wrapper p {
+    font-family: 'adensor';
+    margin: 0;
+    font-size: 3rem;
+    padding: 0 1rem;
+}
