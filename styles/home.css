@@ -117,8 +117,11 @@ img.location-icon {
 }
 
 #bg-wrapper {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    background-color: white;
 }
 
 #main-content {
