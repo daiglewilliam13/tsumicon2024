@@ -22,7 +22,6 @@ export let vendors = [
     'WNTD @wntdinc',
     'Otakuruma',
     '_Shinobu.us',
-    'Sushitoclothing',
     'Himawarii.US',
     'kurozoku',
     'catchmydrift.jp',
