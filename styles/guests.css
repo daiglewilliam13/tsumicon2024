@@ -55,16 +55,16 @@
     opacity: 0;
 }
 
-#goh-card {
+.goh-card {
     height: 35rem;
     width: 35rem;
 }
 
-#goh-card .guest-details {
+.goh-card .guest-details {
     top: 75%;
 }
 
-#goh-card:hover .guest-details {
+.goh-card:hover .guest-details {
     top: 90%;
 }
 
