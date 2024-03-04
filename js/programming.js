@@ -30,11 +30,12 @@ window.changeTab = changeTab;
 //     <p></p>
 // </div>
 
+
 let vendorList = ""
 vendors.forEach((vendor) => {
     vendorList += `<div class="vendor-wrapper">
-         <p>${vendor}</p>
-         <p>Booth#: TBD</p>
+         <p>${vendor.vendor}</p>
+         <p>Booth #: ${vendor.booth}</p>
  </div>`
 })
 let vendorListWrapper = document.getElementById('vendor-list');
