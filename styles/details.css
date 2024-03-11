@@ -11,3 +11,10 @@
     width: 100%;
     max-width: 1600px;
 }
+
+.post-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+}
