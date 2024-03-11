@@ -32,26 +32,76 @@ window.changeTab = changeTab;
 
 
 let vendorList = ""
-vendors.forEach((vendor) => {
-    vendorList += `<div class="vendor-wrapper">
-         <p>${vendor.vendor}</p>
-         <p>Booth #: ${vendor.booth}</p>
- </div>`
-})
-let vendorListWrapper = document.getElementById('vendor-list');
-vendorListWrapper.innerHTML = vendorList;
 
+let sortedVendorAlpha = vendors.toSorted(function(a, b) {
+    var textA = a.vendor.toUpperCase();
+    var textB = b.vendor.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+});
+
+let sortedVendorNum = vendors.toSorted(function(a, b) {
+    var textA = a.booth;
+    var textB = b.booth;
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+});
+
+
+
+let vendorListWrapper = document.getElementById('vendor-list');
+
+
+
+
+
+console.log(sortedVendorAlpha)
+console.log(sortedVendorNum)
 //populate artist alley 
-let artistList = ""
-artists.forEach((artist) => {
-    artistList += `<div class="vendor-wrapper">
-         <p>${artist.vendor}</p>
-         <p>Booth#:${artist.booth}</p>
- </div>`
-})
+
+let sortedArtistAlpha = artists.toSorted(function(a, b) { //toSorted creates copy;
+    var textA = a.vendor.toUpperCase();
+    var textB = b.vendor.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+});
+
+let sortedArtistNum = artists.toSorted(function(a, b) {
+    var textA = a.booth;
+    var textB = b.booth;
+    if(textA == "On Map" || textB == "On Map") {
+        return 1
+    } else {
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    }
+});
+
+
+
+
+
 
 let artistListWrapper = document.getElementById('artist-list');
-artistListWrapper.innerHTML = artistList;
 
+const buildVendorList = (vendorArr) => {
+    vendorArr.forEach((vendor) => {
+        vendorList += `<div class="vendor-wrapper">
+             <p>${vendor.vendor}</p>
+             <p>Booth #: ${vendor.booth}</p>
+     </div>`
+    })
+vendorListWrapper.innerHTML = vendorList;
 
+}
+
+const buildArtistList = (vendorArr) => {
+    let artistList = ""
+    vendorArr.forEach((artist) => {
+        artistList += `<div class="vendor-wrapper">
+             <p>${artist.vendor}</p>
+             <p>Booth#:${artist.booth}</p>
+     </div>`
+    })
+    artistListWrapper.innerHTML = artistList;
+}
+
+buildVendorList(sortedVendorAlpha);
+buildArtistList(sortedArtistAlpha);
 

@@ -170,6 +170,7 @@ export let artists = [
         booth: 17
     },
 ]
+
 export let vendors =
     [
         {
