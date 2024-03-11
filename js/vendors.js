@@ -39,6 +39,137 @@
 //     'Pandora X'
 // ]
 
+
+export let artists = [
+    {
+        vendor: 'ZRStudio',
+        booth: 1
+    },
+    {
+        vendor: 'Carlos Arts',
+        booth: 13
+    },
+    {
+        vendor: 'nightdigital',
+        booth: 3
+    },
+    {
+        vendor: 'Yarn Bubbles',
+        booth: 16
+    },
+    {
+        vendor: 'hadokoa.contrast',
+        booth: 32
+    },
+    {
+        vendor: 'Lethal Bliss',
+        booth: 38
+    },
+    {
+        vendor: 'Iridescent manga',
+        booth: 5
+    },
+    {
+        vendor: 'Lexxie Lynn',
+        booth: 12
+    },
+    {
+        vendor: 'Starberri Kai',
+        booth: 15
+    },
+    {
+        vendor: 'Hyperbooster',
+        booth: 39
+    },
+    {
+        vendor: 'Mikela Kim',
+        booth: 40
+    },
+    {
+        vendor: 'Livinglegacyshop',
+        booth: 20
+    },
+    {
+        vendor: 'mestizamakes',
+        booth: 21
+    },
+    {
+        vendor: 'zzyzzyyart',
+        booth: 22
+    },
+    {
+        vendor: 'Cute and Deadly',
+        booth: 23
+    },
+    {
+        vendor: 'Story Teller Cosplayy',
+        booth: 24
+    },
+    {
+        vendor: 'Deviousdrawing',
+        booth: 25
+    },
+    {
+        vendor: 'YamiWave',
+        booth: 26
+    },
+    {
+        vendor: 'mtsugarr',
+        booth: 18
+    },
+    {
+        vendor: 'theimaginaryking',
+        booth: 27
+    },
+    {
+        vendor: 'Crafty Hedonest',
+        booth: 4
+    },
+    {
+        vendor: 'DentelleElysee',
+        booth: 28
+    },
+    {
+        vendor: 'Golden Koi Designs',
+        booth: 29
+    },
+    {
+        vendor: 'EckoEckos',
+        booth: 30
+    },
+    {
+        vendor: 'Heartwerm',
+        booth: 31
+    },
+    {
+        vendor: 'Die Sentai',
+        booth: 37
+    },
+    {
+        vendor: 'scribble squab',
+        booth: 35
+    },
+    {
+        vendor: 'Cyanidecady',
+        booth: 33
+    },
+    {
+        vendor: 'Soul Tooth',
+        booth: 34
+    },
+    {
+        vendor: 'Sakimi Chan',
+        booth: 19
+    },
+    {
+        vendor: 'nichiyoubi.art',
+        booth: 36
+    },
+    {
+        vendor: 'x3dustco',
+        booth: 17
+    },
+]
 export let vendors =
     [
         {

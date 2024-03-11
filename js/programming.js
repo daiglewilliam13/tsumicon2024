@@ -1,5 +1,5 @@
 import { vendors } from './vendors.js';
-import { artistAlley } from './vendors.js';
+import { artists } from './vendors.js';
 
 console.log('programming.js connected');
 let changeTab = (event, tabName) => {
@@ -43,10 +43,10 @@ vendorListWrapper.innerHTML = vendorList;
 
 //populate artist alley 
 let artistList = ""
-artistAlley.forEach((artist) => {
+artists.forEach((artist) => {
     artistList += `<div class="vendor-wrapper">
-         <p>${artist}</p>
-         <p>Booth#: TBD</p>
+         <p>${artist.vendor}</p>
+         <p>Booth#:${artist.booth}</p>
  </div>`
 })
 
