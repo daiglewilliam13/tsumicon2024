@@ -49,12 +49,6 @@ let sortedVendorNum = vendors.toSorted(function(a, b) {
 
 let vendorListWrapper = document.getElementById('vendor-list');
 
-
-
-
-
-console.log(sortedVendorAlpha)
-console.log(sortedVendorNum)
 //populate artist alley 
 
 let sortedArtistAlpha = artists.toSorted(function(a, b) { //toSorted creates copy;
@@ -72,11 +66,6 @@ let sortedArtistNum = artists.toSorted(function(a, b) {
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     }
 });
-
-
-
-
-
 
 let artistListWrapper = document.getElementById('artist-list');
 
