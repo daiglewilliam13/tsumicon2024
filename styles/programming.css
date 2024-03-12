@@ -109,3 +109,18 @@
     padding: 0 1rem;
     padding-top: .5rem;
 }
+
+#itasha div.img-wrapper {
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.itasha-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    object-fit: contain;
+}
