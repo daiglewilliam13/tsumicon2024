@@ -58,7 +58,7 @@ export let artists = [
         booth: 16
     },
     {
-        vendor: 'hadokoa.contrast',
+        vendor: 'Red.AI',
         booth: 32
     },
     {
