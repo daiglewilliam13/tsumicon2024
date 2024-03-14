@@ -74,7 +74,7 @@ export let artists = [
         booth: 12
     },
     {
-        vendor: 'Starberri Kai',
+        vendor: 'starberrykai',
         booth: 15
     },
     {
@@ -82,7 +82,7 @@ export let artists = [
         booth: 39
     },
     {
-        vendor: 'Mikela Kim',
+        vendor: 'HiMikela',
         booth: 40
     },
     {
@@ -115,7 +115,7 @@ export let artists = [
     },
     {
         vendor: 'mtsugarr',
-        booth: 18
+        booth: 17
     },
     {
         vendor: 'theimaginaryking',
@@ -167,7 +167,7 @@ export let artists = [
     },
     {
         vendor: 'x3dustco',
-        booth: 17
+        booth: 18
     },
 ]
 
