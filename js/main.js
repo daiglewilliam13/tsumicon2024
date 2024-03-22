@@ -21,7 +21,7 @@ let submitEmailURL = "https://tsumicon.wixsite.com/my-site/_functions/mailingLis
 let canSubmit = true;
 let dateOptions = { year: 'numeric', month: 'short', hc: 'h12', hour: 'numeric', minute: '2-digit' }
 const submitEmail = () => {
-    let input = document.getElementById('email-input');
+    let input = document.getElementById('email-input').value;
     let currentTime = Date();
     if (canSubmit && input.length > 0) {
         canSubmit = false
@@ -30,7 +30,6 @@ const submitEmail = () => {
         button.innerText = "Submiting ";
         button.classList.add('loading-spinner');
         button.disabled = true;
-        console.log(emailAddress.value)
         data.email = emailAddress.value
         data.submissionTime = currentTime.toLocaleString();
         fetch(submitEmailURL, {

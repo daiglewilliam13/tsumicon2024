@@ -23,7 +23,7 @@
     box-sizing: border-box;
     z-index: 999;
     flex-direction: column;
-    transition: 100ms ease-in-out;
+    transition: 300ms ease-in-out;
     height: 0;
     justify-content: flex-start;
     position: fixed;
@@ -101,7 +101,7 @@
     animation: spin2 200ms reverse ease-in-out;
 }
 
-#details-dropdown {
+.details-dropdown {
     margin-top: 1rem;
     text-align: center;
 }
@@ -166,10 +166,10 @@
         margin: 0 2rem;
     }
 
-    #details-dropdown {
+    .details-dropdown {
         margin-top: 0;
+        margin-left: .5rem;
         padding-left: 1rem;
-
         white-space: nowrap;
         text-align: left;
         border-left: 2px solid white;
