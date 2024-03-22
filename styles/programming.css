@@ -65,10 +65,16 @@
     animation: slide-in 200ms forwards 1 ease-in-out;
 }
 
-#exhibit-map {
+.exhibit-map {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     height: auto;
+}
+
+.event-sched {
+    width: 100%;
+    max-width: 1750px;
+    margin-top: 2rem;
 }
 
 #vendor-list,
