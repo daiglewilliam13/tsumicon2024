@@ -5,154 +5,759 @@
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TsumiCon Scheduling</title>
-        <meta name="description"
-            content="TsumiCon hotel map, event schedule, itasha list, and detailed programming hours">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="0">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/images/icon.png" type="image/png">
-        <link rel="stylesheet" href="../styles/main.css?ver=1.30">
-        <link rel="stylesheet" href="../styles/navbar.css?ver=1.20">
-        <link rel="stylesheet" href="../styles/programming.css?ver=1.20">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TsumiCon Scheduling</title>
+    <meta name="description" content="TsumiCon hotel map, event schedule, itasha list, and detailed programming hours">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/main.css?ver=1.30">
+    <link rel="stylesheet" href="../styles/navbar.css?ver=1.20">
+    <link rel="stylesheet" href="../styles/programming.css?ver=1.20">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="background-filter"></div>
-        <section id="top-nav-wrapper">
-            <input type="checkbox" id="mobile-menu">
-            <label id="burger" for="mobile-menu">
-                <img src="../images/Circle Logo-white.png" class="navbar-logo">
-                Menu
-            </label>
-            <nav id="top-navbar">
-                <img src="../images/Circle Logo-white.png" class="navbar-logo">
-                <a class="navlink" href="home.html">home</a>
-                <a class="navlink" href="news.html">news</a>
-                <a class="navlink" href="registration.html">registration</a>
-                <a class="navlink" href="guests.html">guests</a>
-                <a class="navlink" href="hotel.html">hotel</a>
-                <a class="navlink" href="programming.html">programming</a>
-                <a class="navlink" href="faq.html">faq</a>
-                <a class="navlink" href="policies.html">policies</a>
-                <a class="navlink" href="after-party.html">after party</a>
-                <a class="cta-button" href="./purchase.html" target="_blank">Buy
-                    your badge<img class="chevron-icon" src="../images/chevron icon.svg"></a>
-                <img src="../images/logo white tight.png" id="full-logo-top">
-                <div class="details-dropdown">
-                    <div>April 5 - 7, 2024</div>
-                    <div>Alexis Park Hotel</div>
-                    <div>Las Vegas, NV</div>
-                </div>
-                <div class="details-dropdown">
-                    <div>Badge Pickup Hours:</div>
-                    <div>Fri & Sat: 9am-6pm</div>
-                    <div>Sun: 9am-4pm</div>
-                </div>
-                <div class="details-dropdown">
-                    <div>Programming Hours:</div>
-                    <div>Fri & Sat: 10am-10pm</div>
-                    <div>Sun: 10am-7pm</div>
+    <div id="background-filter"></div>
+    <section id="top-nav-wrapper">
+        <input type="checkbox" id="mobile-menu">
+        <label id="burger" for="mobile-menu">
+            <img src="../images/Circle Logo-white.png" class="navbar-logo">
+            Menu
+        </label>
+        <nav id="top-navbar">
+            <img src="../images/Circle Logo-white.png" class="navbar-logo">
+            <a class="navlink" href="home.html">home</a>
+            <a class="navlink" href="news.html">news</a>
+            <a class="navlink" href="registration.html">registration</a>
+            <a class="navlink" href="guests.html">guests</a>
+            <a class="navlink" href="hotel.html">hotel</a>
+            <a class="navlink" href="programming.html">programming</a>
+            <a class="navlink" href="faq.html">faq</a>
+            <a class="navlink" href="policies.html">policies</a>
+            <a class="navlink" href="after-party.html">after party</a>
+            <a class="cta-button" href="./purchase.html" target="_blank">Buy
+                your badge<img class="chevron-icon" src="../images/chevron icon.svg"></a>
+            <img src="../images/logo white tight.png" id="full-logo-top">
+            <div class="details-dropdown">
+                <div>April 5 - 7, 2024</div>
+                <div>Alexis Park Hotel</div>
+                <div>Las Vegas, NV</div>
+            </div>
+            <div class="details-dropdown">
+                <div>Badge Pickup Hours:</div>
+                <div>Fri & Sat: 9am-6pm</div>
+                <div>Sun: 9am-4pm</div>
+            </div>
+            <div class="details-dropdown">
+                <div>Programming Hours:</div>
+                <div>Fri & Sat: 10am-10pm</div>
+                <div>Sun: 10am-7pm</div>
+            </div>
+            <div class="details-dropdown">
+                <div>Hall Hours:</div>
+                <div>Fri & Sat: 10am-7pm</div>
+                <div>Sun: 10am-6pm</div>
+            </div>
+        </nav>
+    </section>
+    </section>
+    <section id="programming">
+        <div class="sub-hero">
+
+            <h1 class="page-title">Full Programming</h1>
+            <p class="sub-hero-text">Find Event Map, Booth Maps, and Full Event Schedule Here!</p>
+            <img class="measure-marks-bottom" src="../images/measure lines.png">
+        </div>
+        <div id="tab-wrapper">
+            <div onClick="changeTab(event, 'event-sched')" class="tab selected">Event Schedule & Map</div>
+            <div onClick="changeTab(event, 'exhibit-hall')" class="tab">Exhibitor Hall</div>
+            <div onClick="changeTab(event, 'artist-alley')" class="tab">Artist Alley</div>
+            <div onClick="changeTab(event, 'itasha')" class="tab">Itasha</div>
+        </div>
+        <div id="event-sched" class="tab-content show">
+            <img class="exhibit-map" src="/images/Tsumicon Event Map Flyer.jpg" width="1200px">
+            <p class="sub-hero-text">Full Schedule Below. Click to see larger image</p>
+            <a href="/images/schedule/tsumicon-sched-fri.png" target="_blank"><img class="event-sched"
+                    src="/images/schedule/tsumicon-sched-fri.png" width="1200px"></a>
+            <a href="/images/schedule/tsumicon-sched-sat.png" target="_blank"><img class="event-sched"
+                    src="/images/schedule/tsumicon-sched-sat.png" width="1200px"></a>
+            <a href="/images/schedule/tsumicon-sched-sun.png" target="_blank"><img class="event-sched"
+                    src="/images/schedule/tsumicon-sched-sun.png" width="1200px"></a>
+            <div id="program-guide">
+                <h3>Program Guide and Details</h3>
+                <div class="program-flex-container">
+                    <div>
+                        <h2 class="day">Friday, April 5:</h2>
+                        <h2 class="place">ROOFTOP LOUNGE</h2>
+                        <div class="event-wrapper">
+                            <p class="time">12:00pm - 1:00pm</p>
+                            <p class="name">DJ Set by Hentacle Tentaii</p>
+                            <p class="desc">Mixture of Electronic Music, ranging from UK Hardcore to Electro House</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:30pm - 2:30pm</p>
+                            <p class="name">DJ Set by M-03</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:00pm - 4:00pm</p>
+                            <p class="name">Performance by CelloKat</p>
+                            <p class="desc">CelloKat, the cosplaying cellist, wields her instrument like a magical
+                                portal
+                                into
+                                the world of anime and video game music. Born with a passion for both music and cosplay,
+                                CelloKat combines her two loves,captivating audiences at comic and nerd conventions
+                                nationwide.
+                                With her fretted electric cello in hand, CelloKat takes to the stage, donning
+                                meticulously
+                                crafted costumes inspired by beloved characters. As she draws the bow across the
+                                strings,
+                                her
+                                performances breathe life into iconic melodies, transporting fans to their favorite
+                                fictional
+                                realms. This program will include iconic themes from Demon Slayer, Attack on
+                                Titan,Kingdom
+                                Hearts, and more! </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:00pm - 4:30pm</p>
+                            <p class="name">Performance by Jahsminetea and APIDD</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:00pm - 8:00pm</p>
+                            <p class="name">TsumiCon Official Pre-Party</p>
+                            <p class="desc">6:00pm - 6:30pm | DJ Anbu</p>
+                            <p class="desc">6:45pm - 7:15pm | Anibae | Your lewd Oshi performs for you! Your Anime Babe
+                                IRL.
+                                Anibae is a 2.5 V-Tuber performing and entertaining on and offline. Combining a cute and
+                                lewd
+                                atmosphere of an idol performance, with the sexy and intriguing allure of a burlesque
+                                performance! Here to perform her 1st original song and captivate your hearts! </p>
+                            <p class="desc">7:30pm - 8:00pm | ONI INC. | Hentai-Oriented Music/Alternative
+                                Metal/Alternative
+                                Hip
+                                Hop</p>
+                        </div>
+                        <h2 class="place">MAIN EVENTS</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00AM - 11:00AM </p>
+                            <p class="name">Opening Ceremony</p>
+                            <p class="desc">Hosted by Andrew Alandy</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">11:30 AM - 12:30 PM </p>
+                            <p class="name">Q&A with Voice Actors</p>
+                            <p class="desc">Hosted by Andrew Alandy</p>
+                            <p class="desc">Come meet and get to know some of our Special Guests - Voice Actors: </p>
+                            <p class="desc">Christine Auten - Esdeath in Akame ga Kill!</p>
+                            <p class="desc">Juliet Simmons - Tenri Ayukawa in The World God Only Knows, Kurome in Akame
+                                ga
+                                Kill!,
+                                Chiyo Sakura in Monthly Girls’ Nozaki-kun</p>
+                            <p class="desc">Molly Searcy - Akame in Akame ga Kill!, Centorea Shianus in Monster Musume
+                            </p>
+                            <p class="desc">Aaron Campbell - Madoka in Chainsaw Man, Perospero and Napoleon in One
+                                Piece,
+                                Majestic and Kotaro Shimura in My Hero Academia</p>
+                            <p class="desc">Christina Kelly - Mine in Akame ga Kill!, Alice Nakiri in Food Wars!:
+                                Shokugeki
+                                no
+                                Soma, Mary Saotome in Kakegurui, Michiko Tendo in Chainsaw Man, Miyako in Oshi no Ko</p>
+                            <p class="desc">Mike McFarland - Master Roshi and Yajirobe in Dragon Ball and Dragon Ball Z,
+                                Jean
+                                Havoc in Fullmetal Alchemist, Buddy the Clown in One Piece, Jean Kirstein in Attack on
+                                Titan
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 2:30 PM </p>
+                            <p class="name">Outlandishly Explain Your Extreme Fetish</p>
+                            <p class="desc">Hosted by Wolf Boy</p>
+                            <p class="desc">Do you have a kink that everyone thinks is weird? Well…us too. Come join the
+                                Outlandish Crew as we explore the dark and crazy side of yours and our kinks and
+                                fetishes
+                                within
+                                hentai and manga. </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:30 PM - 4:30 PM </p>
+                            <p class="name">Erotic Japanese</p>
+                            <p class="desc">Hosted by June Lovejoy and Moderated by Andrew Alandy</p>
+                            <p class="desc">Learn about erotic and “dirty” Japanese language.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">5:00 PM - 7:00 PM</p>
+                            <p class="name">TsumiCon Stand-Up Comedy Showcase</p>
+                            <p class="desc">Hosted by Rey Cabato @remcreate</p>
+                            <p class="desc">Weeb and Normie Comedians unite and showcase their own brand of comedy to
+                                the
+                                Main
+                                Event Stage. Previous champions and participants of the Anime Expo Late Night Comedy
+                                Showdown
+                                and touring comedy veterans will rip the stage for a time of side-splitting laughter and
+                                entertainment. Featuring in-house DJ Flipboitamidles.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">8:00 PM - 10:00 PM</p>
+                            <p class="name">Burlesque Show by Otaku Cabaret</p>
+                            <p class="desc">Hosted by Andrew Alandy and Emmi Xi</p>
+                        </div>
+                        <h2 class="place">PANEL 1</h2>
+                        <div class="event-wrapper">
+                            <p class="time">11:30 AM - 12:30 PM</p>
+                            <p class="name">Outlandish Swipe to Pipe: Anime Tinder</p>
+                            <p class="desc">Hosted by Wolf Boy</p>
+                            <p class="desc">Come and try your luck at guessing these Anime Tinder Profiles. If you’re
+                                lucky,
+                                you
+                                might even get a few matches. </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 3:00 PM</p>
+                            <p class="name">K-POP Random Dance Play</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:30 PM - 4:30 PM</p>
+                            <p class="name">3D Printing for Cosplay 66</p>
+                            <p class="desc">Hosted by 2Geekylicious</p>
+                            <p class="desc">Overview of 3D Printing, Printers, and Resources for Cosplaying - We will
+                                discuss
+                                the pros and cons of 3D Printers for Cosplay and relevant information to make an
+                                informed
+                                decision on whether or not to get into 3D Printing and what type of 3D Printer to
+                                acquire.
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">5:00 PM - 6:00 PM</p>
+                            <p class="name">SAKE - Finding Your Way to Alternative Lifestyles</p>
+                            <p class="desc">Hosted by Remy Thane</p>
+                            <p class="desc">Learn about SAKE’s origin and the various ways to find alternative lifestyle
+                                communities of all shapes, sizes, and orientations. </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:30 PM - 7:30 PM</p>
+                            <p class="name">Anime Improv</p>
+                            <p class="desc">Hosted by Lysus</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">8:00 PM - 9:00 PM</p>
+                            <p class="name">Christianity and the Lord of the Rings</p>
+                            <p class="desc">Hosted by The Colonel</p>
+                            <p class="desc">Learn about how faith and combat inspired the greatest trilogy of our time.
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">9:00 PM - 10:00 PM</p>
+                            <p class="name">Dune: Ecology, Politics, and Artificial Intelligence</p>
+                            <p class="desc">Hosted by The Colonel</p>
+                            <p class="desc">Spice. Spice. Spice. But why? Do the movies adequately explain this? What
+                                role
+                                does
+                                a high performance compound have in a neo-Feudalistic society with a grudge against
+                                artificial
+                                intelligence? How do harsh environs shape a warrior society? How do ecological changes
+                                impact
+                                indigenous species? Why is a tripod the most unstable of political situations? Join us
+                                for a
+                                fun
+                                and spirited discussion of all things Dune!</p>
+                        </div>
+                        <h2 class="place">PANEL 2</h2>
+                        <div class="event-wrapper">
+                            <p class="time">11:00 AM - 12:30 PM</p>
+                            <p class="name">Onitama: Contest of Cunning and Strategy</p>
+                            <p class="desc">Hosted by The Colonel</p>
+                            <p class="desc">Think you’re clever? Think you have the strategic and perceptive mind to
+                                best
+                                your
+                                opponent in a game of skill and planning? Developed by Shimpei Sato, Onitama shares the
+                                intellectual depth of chess with the relaxation of Zen Meditation!</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 2:00 PM</p>
+                            <p class="name">BDSM 101</p>
+                            <p class="desc">Hosted by Daxxx</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">2:30 PM - 3:30 PM</p>
+                            <p class="name">Open Mic Playground</p>
+                            <p class="desc">Hosted by Rey Cabato</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:00 PM - 5:00 PM</p>
+                            <p class="name">Themes & Scenes</p>
+                            <p class="desc">Hosted by CelloKat</p>
+                            <p class="desc">Dissect anime’s most iconic musical themes. Find out how the theory,
+                                instrumentation, and placement in the context of the story make these melodies
+                                unforgettable.
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">5:30 PM - 6:30 PM</p>
+                            <p class="name">Projekt Melody: Ultimate Science Trivia</p>
+                            <p class="desc">Hosted by Toa_zero</p>
+                            <p class="desc">Let’s see if you’re the true Chad of the Science Team and know all about
+                                your
+                                oshi,
+                                Projekt Melody!
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">7:00 PM - 8:00 PM</p>
+                            <p class="name">Demon Slayer Abridged Series</p>
+                            <p class="desc">Hosted by Kidd Capture</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">8:30 PM - 9:30 PM</p>
+                            <p class="name">Becoming a Voice Actor</p>
+                            <p class="desc">Hosted by Jim Bradley</p>
+                        </div>
+                        <h2 class="place">PARTHENON 5</h2>
+                        <div class="event-wrapper">
+                            <p class="time">12:00 PM - 10:00 PM</p>
+                            <p class="name">Karaoke Lounge</p>
+                            <p class="desc">Hosted by Lemar Harris</p>
+                        </div>
+                        <h2 class="place">HOSPITALITY SUITE</h2>
+                        <div class="event-wrapper">
+                            <p class="time">5:00 PM - 9:00 PM</p>
+                            <p class="name">SNO Bunni Hostess Club</p>
+                            <p class="desc">Welcome to the SNO Bunni Hostess Club, where fantasies come to life in an
+                                exclusive,
+                                adults-only experience! Join our charming bunnies for an evening of seductive
+                                performances,
+                                one-on-one entertainment, and 18+ photo opportunities. Whether you’re here to unwind or
+                                get
+                                wound up, lose yourself down the rabbit hole at this intimate good-vibes-only party! $25
+                                Cover
+                                Fee includes access to the Hostess Club, complimentary beverages, and an instant
+                                polaroid
+                                photo.
+                                Room capacity is limited. Entry is granted on a first come, first serve basis.</p>
+                        </div>
+                        <h2 class="place">SUITE B</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 12:00 AM</p>
+                            <p class="name">Bible Study</p>
+                            <p class="desc"> Hosted by Strawberry Scented Burnout</p>
+                            <p class="desc">Relax and soak in the vibes with the Strawberry Scented Burnout Team’s Bible
+                                Study
+                                Lounge! We’re not taking you to Sunday School. We’re providing you a place to live out
+                                your
+                                wildest, blasphemous dreams. Nuns and priests, angels and demons, Catholic school girls
+                                and
+                                parochial school boys are invited to play VR Games and “ride” for prizes like LED Bunny
+                                ears
+                                provided by Motorbunny and more!</p>
+                        </div>
                     </div>
-                <div class="details-dropdown">
-                    <div>Hall Hours:</div>
-                    <div>Fri & Sat: 10am-7pm</div>
-                    <div>Sun: 10am-6pm</div>
-                </div>
-            </nav>
-        </section>
-        </section>
-        <section id="programming">
-            <div class="sub-hero">
+                    <div>
+                        <h1 class="day">Saturday, April 6</h1>
+                        <h2 class="place">ROOFTOP LOUNGE</h2>
+                        <div class="event-wrapper">
+                            <p class="time">12:00 PM - 10:00 PM</p>
+                            <p class="name">DJ Set by M-03</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:30 PM - 2:30 PM</p>
+                            <p class="name">DJ Set by Hentacle Tentaii</p>
+                            <p class="desc">Mixture of Electronic Music, ranging from UK Hardcore to Electro House</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:00 PM - 3:30 PM</p>
+                            <p class="name">Aerial Lyra Performances by Noctrina and Winter Kat</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:00 PM - 4:30 PM</p>
+                            <p class="name">Performance by Jahsminetea and APIDD</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:00 PM - 8:00 PM</p>
+                            <p class="name">Official Pre-Party</p>
+                            <p class="desc">Mixture of Electronic Music, ranging from UK Hardcore to Electro House</p>
+                            <p class="desc">6:00 PM - 6:30 PM - Nevos Tyle</p>
+                            <p class="desc">6:45 PM - 7:15 PM - DJ Nazo</p>
+                            <p class="desc">7:30 PM - 8:00 PM - DJ FANG</p>
+                        </div>
+                        <h2 class="place">MAIN EVENTS</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 11:00 AM</p>
+                            <p class="name">JAV Industry 101</p>
+                            <p class="desc">Hosted by June Lovejoy and Moderated by Andrew Alandy</p>
+                            <p class="desc">An overview of how the JAV Industry works.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">11:30 AM - 1:00 PM</p>
+                            <p class="name">Pole Dancing Competition</p>
+                            <p class="desc">Hosted by Andrew Alandy and Emmi Xi</p>
+                            <p class="desc">Organized by Otaku Cabaret</p>
+                            <p class="desc">Judged by BishoujoMom, patrickbubblepop, and Nikia Renee</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:30 PM - 2:30 PM</p>
+                            <p class="name">Foodgasms! With the Voice Actors of Food Wars!</p>
+                            <p class="desc">Come meet and get to know some of our Special Guests - Voice Actors:</p>
+                            <p class="desc">Blake Shepard - Soma Yukihira</p>
+                            <p class="desc">Christina Kelly - Alice Nakiri</p>
+                            <p class="desc">Leraldo Anzaldua - Ryo Kurokiba</p>
+                            <p class="desc">Brittney Karbowski - Hisako Arato</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:00 PM - 5:00 PM</p>
+                            <p class="name">TsumiCon Stand-Up Comedy Showcase</p>
+                            <p class="desc">Hosted by Rey Cabato @remcreate</p>
+                            <p class="desc">Weeb and Normie Comedians unite and showcase their own brand of comedy to
+                                the Main Event Stage. Previous champions and participants of the Anime Expo Late Night
+                                Comedy Showdown and touring comedy veterans will rip the stage for a time of
+                                side-splitting laughter and entertainment. Featuring in-house DJ Flipboitamidles.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:00 PM - 8:00 PM</p>
+                            <p class="name">Burlesque Show by Otaku Cabaret</p>
+                            <p class="desc">Hosted by Andrew Alandy and Emmi Xi</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">9:00 PM - 10:00 PM</p>
+                            <p class="name">Rope 101</p>
+                            <p class="desc">Hosted by Daxxx</p>
+                        </div>
+                        <h2 class="place">PANEL 1</h2>
+                        <div class="event-wrapper">
+                            <p class="time">11:00 AM - 12:00 PM</p>
+                            <p class="name">Hip Hop Dancing Workshop</p>
+                            <p class="desc">Hosted by Jahsminetea</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">12:30 PM - 1:30 PM</p>
+                            <p class="name">3D Printing for Cosplay 117</p>
+                            <p class="desc">Hosted by 2Geekylicious</p>
+                            <p class="desc">Setting up and tuning your 3D Printer - We will discuss how to set up and
+                                calibrate 3D Printers for Cosplay.
+                            </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">2:00 PM - 3:00 PM</p>
+                            <p class="name">3D Printing for Cosplay 121</p>
+                            <p class="desc">Hosted by 2Geekylicious</p>
+                            <p class="desc">Preparing files for 3D Printing - We will discuss the processes of turning
+                                digital files into physical objects for 3D Printing for Cosplay. This includes resizing,
+                                cutting, orienting, and supporting STLs for greater success.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:30 PM - 4:30 PM</p>
+                            <p class="name">The Great Outlandish Debate</p>
+                            <p class="desc">Hosted by Wolf Boy</p>
+                            <p class="desc">Come join the Outlandish Crew as we debate with our audience over the most
+                                important topics, like who’s more racist - Freiza or Tobirama Senju? *Prepare to get
+                                triggered.*</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">5:00 PM - 6:00 PM</p>
+                            <p class="name">The Tsundere Experience</p>
+                            <p class="desc">Hosted by The Ecchi Gang</p>
+                            <p class="desc">Be ready to listen and obey.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:30 PM - 7:30 PM</p>
+                            <p class="name">Ethics in Alternative Lifestyles</p>
+                            <p class="desc">Hosted by Remy Thane</p>
+                            <p class="desc">We will be discussing the ethics and morality in alternative lifestyles and
+                                navigating them to create and facilitate a safer community at home and abroad.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">8:00 PM - 10:00 PM</p>
+                            <p class="name">Outlandish Game Night</p>
+                            <p class="desc">Hosted by Wolf Boy</p>
+                            <p class="desc">If you dare, come play some risque-style party games with the Outlandish
+                                Crew. If you’re brave enough, you might even win a few prizes!</p>
+                        </div>
+                        <h2 class="place">PANEL 2</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 11:00 AM</p>
+                            <p class="name">The Cult Appeal of Fallout: New Vegas</p>
+                            <p class="desc">Hosted by Max</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">11:30 AM - 12:30 PM</p>
+                            <p class="name">Open Mic Playground</p>
+                            <p class="desc">Hosted by Rey Cabato</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 2:30 PM</p>
+                            <p class="name">Anime Jeopardy</p>
+                            <p class="desc">Hosted by Lysus</p>
+                            <p class="desc">Come join us in a game of jeopardy, following standard rules and protocol.
+                                We’ll be handing out prizes to the winners!</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:00 PM - 4:00 PM</p>
+                            <p class="name">Smutter Me with Tea: A Yaoi/BL Panel</p>
+                            <p class="desc">Hosted by Queenieko Kurama</p>
+                            <p class="desc">Have you ever shipped two male characters together that were not really
+                                together? Been interested in what others may have called taboo? Dive deep into the world
+                                of Yaoi aka Boys Love. In this panel, we will talk about what Yaoi/BL is, how it came
+                                about, and how it has evolved today. All of this while enjoying some tea provided by the
+                                host.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:30 PM - 5:30 PM</p>
+                            <p class="name">Mind Break</p>
+                            <p class="desc">Hosted by catgirlsandwarcrimes</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:00 PM - 7:00 PM</p>
+                            <p class="name">German in Anime</p>
+                            <p class="desc">Hosted by The Colonel</p>
+                            <p class="desc">Learn about the German Military in WW2 and its references in Anime. We’ll
+                                also go over the German Language in general and the Cold War in East and West Germany
+                                and its parallels.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">7:30 PM - 9:30 PM</p>
+                            <p class="name">Furescent’s Onesie/Lingerie Party!</p>
+                            <p class="desc">Hosted by Furescent</p>
+                            <p class="desc">Games, Music, Cutest Lingerie Award, and a Free Onesie Raffle! Come join the
+                                fun and chill with friends. Onesies are encouraged, but not a deal breaker.</p>
+                        </div>
+                        <h2 class="place">PARTHENON 5</h2>
+                        <div class="event-wrapper">
+                            <p class="time">12:00 PM - 10:00 PM</p>
+                            <p class="name">Hosted by Lemar Harris</p>
+                            <p class="desc">4:00 PM - 6:00 PM - Official Karaoke Contest</p>
+                            <p class="desc"> Hosted by Lemar Harris | Sponsored by MizziMie | Judged by Lemar Harris,
+                                MizziMie, and Ceej Frankera
+                            </p>
+                        </div>
+                        <h2 class="place">HOSPITALITY SUITE</h2>
+                        <div class="event-wrapper">
+                            <p class="time">5:00 PM - 9:00 PM</p>
+                            <p class="name">SNO Bunni Hostess Club</p>
+                            <p class="desc">Welcome to the SNO Bunni Hostess Club, where fantasies come to life in an
+                                exclusive,
+                                adults-only experience! Join our charming bunnies for an evening of seductive
+                                performances,
+                                one-on-one entertainment, and 18+ photo opportunities. Whether you’re here to unwind or
+                                get
+                                wound up, lose yourself down the rabbit hole at this intimate good-vibes-only party! $25
+                                Cover
+                                Fee includes access to the Hostess Club, complimentary beverages, and an instant
+                                polaroid
+                                photo.
+                                Room capacity is limited. Entry is granted on a first come, first serve basis.</p>
+                        </div>
+                        <h2 class="place">SUITE B</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 12:00 AM</p>
+                            <p class="name">Bible Study</p>
+                            <p class="desc"> Hosted by Strawberry Scented Burnout</p>
+                            <p class="desc">Relax and soak in the vibes with the Strawberry Scented Burnout Team’s Bible
+                                Study
+                                Lounge! We’re not taking you to Sunday School. We’re providing you a place to live out
+                                your
+                                wildest, blasphemous dreams. Nuns and priests, angels and demons, Catholic school girls
+                                and
+                                parochial school boys are invited to play VR Games and “ride” for prizes like LED Bunny
+                                ears
+                                provided by Motorbunny and more!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="day">Sunday, April 7</h1>
+                        <h2>MAIN EVENTS</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:30 AM - 12:30 PM</p>
+                            <p class="name">Hentai Tags Iceberg</p>
+                            <p class="desc">Hosted by CatMeowMeow</p>
+                            <p class="desc">A panel that explores the world of Hentai through their tags/sub-genre,
+                                talking about how Hentai came to be and detailed discussions about the genre/tags they
+                                have. Both Japanese and English tags, from relatively tame content to seriously out of
+                                this world. Absolutely not for the weak-minded. A warning will be given to those who
+                                want to see just the basics and not the hardcore stuff.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 2:00 PM</p>
+                            <p class="name">Erotic Tourism in Japan by Tokyo Love District</p>
+                            <p class="desc">Hosted by June Lovejoy and Moderated by Andrew Alandy</p>
+                            <p class="desc">Covering Tokyo’s most erotic places to visit! Perfect for those planning a
+                                trip to Japan and wanting to add some spice to their itinerary!</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">2:30 PM - 4:00 PM</p>
+                            <p class="name">Cosplay Contest</p>
+                            <p class="desc">Hosted by Andrew Alandy and Emmi Xi | Judged by K8Sarkissian, MizziMie, and
+                                Jihatsu </p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:30 PM - 5:30 PM</p>
+                            <p class="name">Anime Dating Game</p>
+                            <p class="desc">Hosted by Lysus</p>
+                            <p class="desc">Come join a blind dating game where one person is in the hot seat asking
+                                questions and the others are answering with just their voices. Who knows? You might be
+                                able to meet your match!</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">6:00 PM - 7:00 PM</p>
+                            <p class="name">Closing Ceremony</p>
+                            <p class="desc">Hosted by Andrew Alandy</p>
+                        </div>
+                        <h2 class="place">PANEL 2</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 11:00 AM</p>
+                            <p class="name">2 Kawaii 4 Comfort Screening and Q&A</p>
+                            <p class="desc">Hosted by Luke Palmer</p>
+                            <p class="desc">The mortifying cult classic series about every bad time you’ve had at a con
+                                returns! After earning its laurels at the Hentai Con Film Festival, 2K4C is coming to
+                                TsumiCon to remind us that even as we get older, the con drama never truly dies.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">11:30 AM -12:30 PM</p>
+                            <p class="name">Cosplay Covers</p>
+                            <p class="desc">Hosted by CelloKat</p>
+                            <p class="desc">CelloKat, the cosplay cellist, has made over 100 video covers of anime and
+                                video game theme music. In this panel, she will take you through her entire process of
+                                creating a cover. Being an artist in today’s world means you have to wear many hats and
+                                learn a lot of skills. Get an intro to arranging, recording, producing, cosplay,
+                                filming, editing, and online marketing all in one.</p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">1:00 PM - 2:30 PM</p>
+                            <p class="name">SpyCraft: The World of Spy x Family</p>
+                            <p class="desc"> Hosted by The Colonel</p>
+                            <p class="desc"> It’s a Cold War and two nuclear juggernauts are on a collision course! No,
+                                not the USA and Russia! We’re talking about Ostania vs. Westalis! Do you have the
+                                cunning spy skills to survive in a world of deceit and subterfuge? Come find out as we
+                                test your spy abilities in Morse Code, Caesar Shift, Binary Memorization, and other fun
+                                and challenging activities!</p>
 
-                <h1 class="page-title">Full Programming</h1>
-                <p class="sub-hero-text">Find Event Map, Booth Maps, and Full Event Schedule Here!</p>
-                <img class="measure-marks-bottom" src="../images/measure lines.png">
-            </div>
-            <div id="tab-wrapper">
-                <div onClick="changeTab(event, 'event-sched')" class="tab selected">Event Schedule & Map</div>
-                <div onClick="changeTab(event, 'exhibit-hall')" class="tab">Exhibitor Hall</div>
-                <div onClick="changeTab(event, 'artist-alley')" class="tab">Artist Alley</div>
-                <div onClick="changeTab(event, 'itasha')" class="tab">Itasha</div>
-            </div>
-            <div id="event-sched" class="tab-content show">
-                <img class="exhibit-map" src="/images/Tsumicon Event Map Flyer.jpg" width="1200px">
-                <p class="sub-hero-text">Full Schedule Below. Click to see larger image</p>
-                <a href="/images/schedule/tsumicon-sched-fri.png" target="_blank"><img class="event-sched" src="/images/schedule/tsumicon-sched-fri.png" width="1200px"></a>
-                <a href="/images/schedule/tsumicon-sched-sat.png" target="_blank"><img class="event-sched" src="/images/schedule/tsumicon-sched-sat.png" width="1200px"></a>
-                <a href="/images/schedule/tsumicon-sched-sun.png" target="_blank"><img class="event-sched" src="/images/schedule/tsumicon-sched-sun.png" width="1200px"></a>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">3:00 PM - 4:00 PM</p>
+                            <p class="name">Anime Ink: From Edo to Otaku</p>
+                            <p class="desc">Hosted by MagicallyAverage</p>
+                            <p class="desc">Debating on getting an anime tattoo? Deciding what waifu or husbando would
+                                look best on your bod? Or just looking for some tattoo advice from some inked up weebs?
+                                Well, you’ve come to the right panel! Join the Baka&Company Podcast as we take a look at
+                                body art and the history of tattooing in Japan and detailing its impact on pop culture
+                                today! We’ll also be inviting the audience to share their anime tattoo ideas. Join the
+                                fun as we talk about everything related to ink and anime!</p>
 
-            </div>
-            <div id="exhibit-hall" class="tab-content">
-                <img id="exhibit-map" src="/images/Exhibitor Hall Map.jpg" height="800px" width="800px">
-                <div id="vendor-list">
-                    <div class="vendor-wrapper">
-                        <p></p>
-                        <p></p>
+                        </div>
+                        <div class="event-wrapper">
+                            <p class="time">4:30 PM - 6:00 PM</p>
+                            <p class="name">What It Takes to Compete in Hottest Men in Anime</p>
+                            <p class="desc">Hosted by patrickbubblepop and kawaiibrocosplay</p>
+                        </div>
+                        <h2 class="place">PARTHENON 5</h2>
+                        <div class="event-wrapper">
+                            <p class="time">12:00 PM - 6:00 PM</p>
+                            <p class="name">Karaoke Lounge</p>
+                            <p class="desc">Hosted by Lemar Harris</p>
+                        </div>
+                        <h2 class="place">HOSPITALITY SUITE</h2>
+                        <div class="event-wrapper">
+                            <p class="time">11:00 AM - 3:00 PM</p>
+                            <p class="name">SNO Bunni Hostess Club</p>
+                            <p class="desc">Welcome to the SNO Bunni Hostess Club, where fantasies come to life in an
+                                exclusive,
+                                adults-only experience! Join our charming bunnies for an evening of seductive
+                                performances,
+                                one-on-one entertainment, and 18+ photo opportunities. Whether you’re here to unwind or
+                                get
+                                wound up, lose yourself down the rabbit hole at this intimate good-vibes-only party! $25
+                                Cover
+                                Fee includes access to the Hostess Club, complimentary beverages, and an instant
+                                polaroid
+                                photo.
+                                Room capacity is limited. Entry is granted on a first come, first serve basis.</p>
+                        </div>
+                        <h2 class="place">SUITE B</h2>
+                        <div class="event-wrapper">
+                            <p class="time">10:00 AM - 6:00 PM</p>
+                            <p class="name">Bible Study</p>
+                            <p class="desc"> Hosted by Strawberry Scented Burnout</p>
+                            <p class="desc">Relax and soak in the vibes with the Strawberry Scented Burnout Team’s Bible
+                                Study
+                                Lounge! We’re not taking you to Sunday School. We’re providing you a place to live out
+                                your
+                                wildest, blasphemous dreams. Nuns and priests, angels and demons, Catholic school girls
+                                and
+                                parochial school boys are invited to play VR Games and “ride” for prizes like LED Bunny
+                                ears
+                                provided by Motorbunny and more!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="artist-alley" class="tab-content">
-                <img id="exhibit-map" src="/images/Artist Alley Map.jpg" height="800px" width="800px">
-                <div id="artist-list">
-                    <div class="vendor-wrapper">
-                        <p></p>
-                        <p></p>
-                    </div>
+        </div>
+        <div id="exhibit-hall" class="tab-content">
+            <img id="exhibit-map" src="/images/Exhibitor Hall Map.jpg" height="800px" width="800px">
+            <div id="vendor-list">
+                <div class="vendor-wrapper">
+                    <p></p>
+                    <p></p>
                 </div>
             </div>
-            <div id="itasha" class="tab-content">
-                <div class="img-wrapper">
-                <img class="itasha-img"  width="600px" src="/images/itasha/arenaskyyy.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/buildbyliving.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/evo_r1n.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/heydevyn.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/Lewd_hunter254.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/LiveryDynamics.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/miku_duke.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/MikuxLuka86.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/Mizzimie.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/Nyitasha_velo.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/Pyra.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/solr.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/unprettyracing.png">
-                <img class="itasha-img"  width="600px" src="/images/itasha/yor_e210.png">
-
-            </div>
-
-
-            </div>
-        </section>
-        <section id="footer">
-            <div id="bottom-navbar">
-                <img src="../images/logo white tight.png" id="navbar-logo">
-                <div id="footer-details">
-                    <h4>TsumiCon 2024</h4>
-                    <h4>april 5 - 7</h4>
-                    <h4>alexis park hotel, las vegas nv</h4>
-                    <h4>all rights reserved ©2024</h4>
+        </div>
+        <div id="artist-alley" class="tab-content">
+            <img id="exhibit-map" src="/images/Artist Alley Map.jpg" height="800px" width="800px">
+            <div id="artist-list">
+                <div class="vendor-wrapper">
+                    <p></p>
+                    <p></p>
                 </div>
             </div>
-            <div id="email-signup-wrapper">
-                <h1>Sign up to receive updates</h1>
-                <input type="text" placeholder="name@email.com" id="email-input"><br>
-                <button class="cta-button" onClick="submitEmail()" id="email-submit"><span id="button-text"
-                        class="">Sign
-                        up</span></button>
+        </div>
+        <div id="itasha" class="tab-content">
+            <div class="img-wrapper">
+                <img class="itasha-img" width="600px" src="/images/itasha/arenaskyyy.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/buildbyliving.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/evo_r1n.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/heydevyn.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/Lewd_hunter254.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/LiveryDynamics.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/miku_duke.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/MikuxLuka86.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/Mizzimie.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/Nyitasha_velo.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/Pyra.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/solr.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/unprettyracing.png">
+                <img class="itasha-img" width="600px" src="/images/itasha/yor_e210.png">
+
             </div>
-        </section>
-        <script src="../js/main.js" async defer></script>
-        <script src="../js/programming.js" async defer type="module"></script>
-        <script src="../js/vendors.js" async defer type="module"></script>
-    </body>
+
+
+        </div>
+    </section>
+    <section id="footer">
+        <div id="bottom-navbar">
+            <img src="../images/logo white tight.png" id="navbar-logo">
+            <div id="footer-details">
+                <h4>TsumiCon 2024</h4>
+                <h4>april 5 - 7</h4>
+                <h4>alexis park hotel, las vegas nv</h4>
+                <h4>all rights reserved ©2024</h4>
+            </div>
+        </div>
+        <div id="email-signup-wrapper">
+            <h1>Sign up to receive updates</h1>
+            <input type="text" placeholder="name@email.com" id="email-input"><br>
+            <button class="cta-button" onClick="submitEmail()" id="email-submit"><span id="button-text" class="">Sign
+                    up</span></button>
+        </div>
+    </section>
+    <script src="../js/main.js" async defer></script>
+    <script src="../js/programming.js" async defer type="module"></script>
+    <script src="../js/vendors.js" async defer type="module"></script>
+</body>
 
 </html>

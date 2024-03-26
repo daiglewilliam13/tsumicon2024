@@ -77,6 +77,72 @@
     margin-top: 2rem;
 }
 
+#program-guide {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#program-guide h3 {
+    font-family: "CA Mechano";
+}
+
+#program-guide .day {
+    font-size: 2rem;
+}
+#program-guide .event-wrapper {
+    background-color: #710c04;
+    text-align: start;
+    
+}
+
+#program-guide .place {
+    text-align: start;
+}
+
+.program-flex-container {
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+}
+
+.program-flex-container div {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.event-wrapper {
+    padding: 1rem;
+    border-bottom: 3px solid white;
+    transition: 400ms;
+}
+
+.event-wrapper:hover {
+    margin-top: 1rem;
+    box-shadow: 2px 2px 20px -8px white;
+}
+
+.event-wrapper p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.event-wrapper .time {
+    text-decoration: underline;
+}
+
+.event-wrapper .name {
+    font-weight: 600;
+}
+
+.event-wrapper .desc {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
 #vendor-list,
 #artist-list {
     display: flex;
