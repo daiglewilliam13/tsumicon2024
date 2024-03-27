@@ -220,4 +220,5 @@ img.event-sched {
     margin: 0 auto;
     padding: 1rem;
     object-fit: contain;
+    box-sizing: border-box;
 }
