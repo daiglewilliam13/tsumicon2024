@@ -43,6 +43,16 @@
     margin: 2rem auto;
 }
 
+#goh .guest-card-wrapper {
+    width: 35rem;
+    height: 35rem;
+
+}
+
+#goh .guest-name {
+    font-size: 2.5rem;
+}
+
 .guest-card-wrapper {
     position: relative;
     background-color: whitesmoke;
@@ -55,18 +65,6 @@
     opacity: 0;
 }
 
-.goh-card {
-    height: 35rem;
-    width: 35rem;
-}
-
-.goh-card .guest-details {
-    top: 75%;
-}
-
-.goh-card:hover .guest-details {
-    top: 90%;
-}
 
 .guest-card-wrapper:hover .accent-block {
     width: 50%;
