@@ -2,10 +2,32 @@
 const urlParams = new URLSearchParams(window.location.search);
 const postDetails = urlParams.get('post');
 const imgURL = "https://static.wixstatic.com/media/";
+const postURI = 'https://tsumicon.wixsite.com/my-site/_functions/myPosts';
 
-const posts = JSON.parse(localStorage.getItem('posts'))
 
-const current = posts.filter((post) => post.slug == postDetails)
+async function getPosts(url) {
+    try {
+
+        const response = await fetch(url, {
+            method: 'GET',
+            mode: 'cors'
+        });
+        let data = await response.json();
+        if (response) {
+            localStorage.clear();
+            localStorage.setItem("posts", JSON.stringify((data.items)));
+            let posts = JSON.parse(localStorage.getItem('posts'))
+            let current = posts.filter((post) => post.slug == postDetails)
+            buildPost(current[0]);
+        }
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+getPosts(postURI);
+
+
 
 const buildPost = (post) => {
 
@@ -40,4 +62,3 @@ const buildPost = (post) => {
 
 }
 
-buildPost(current[0]);

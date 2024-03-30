@@ -57,7 +57,7 @@ function buildPost(data) {
                     <div class="blog-text">
                         <p class="text fade">${truncatedText.replace(/ {4}|[\t\n\r]/gm, '<br/><br/>')}</p>
                         <p><a href="/details.html?post=${post.slug}"><b>see more...</b></a></p> 
-                        <p><input value="https://www.tsumicon.com/news/details/html?post=${post.slug}"></input> <img src="../images/copy-icon.png" class="copy-icon">Share<p>
+                        <p><input value="https://www.tsumicon.com/details.html?post=${post.slug}"></input> <img src="../images/copy-icon.png" class="copy-icon">Share<p>
                     </div>
             </div>`;
     }
