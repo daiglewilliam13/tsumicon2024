@@ -222,3 +222,7 @@ img.event-sched {
     object-fit: contain;
     box-sizing: border-box;
 }
+
+.cancelled {
+    text-decoration: line-through;
+}
