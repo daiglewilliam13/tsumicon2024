@@ -1,5 +1,5 @@
 
-let cards = Array.from(document.getElementsByClassName('guest-card-wrapper'));
+let cards = Array.from(document.getElementsByClassName('guest'));
 let selectors = Array.from(document.getElementById('guest-selectors').children);
 let sections = Array.from(document.getElementsByClassName('guest-dropdown'));
 
@@ -42,11 +42,11 @@ const showSection = (value) => {
     })
     let delay = 0;
     cards.forEach((card) => {
-        let cardParent = card.parentElement.parentElement.id
+        let cardParent = card.parentElement.parentElement.id;
+        console.log(cardParent);
         if (cardParent == value) {
             setTimeout(() => {
                 card.classList.add('fade-in')
-
             }, delay)
             delay = delay + 100;
         } else {
@@ -60,11 +60,9 @@ selectors.forEach((el) => {
         highlightSelector(this.dataset.select)
         showSection(this.dataset.select);
     })
-    //go through each button and if the data-selector doesn't match pressed button, remove class
-
-    //cycle through divs and change from show to hide
 
 })
 
-let video = document.getElementById('goh-card').children[2];
-console.log(video);
+showSection('goh');
+
+
