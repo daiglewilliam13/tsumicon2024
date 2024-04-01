@@ -1,44 +1,3 @@
-// export let vendors = [
-//     "hiromu.designs" : "",
-//     'basedkawaii',
-//     'Furescent ',
-//     'fur_Smith',
-//     'Weeb Culture',
-//     'mdotrage',
-//     'u.k.o fitness',
-//     'Chibizilla',
-//     'Buki Pins',
-//     'Low Standards Designs ',
-//     '_Crisisculture',
-//     'Bishoujucomplex',
-//     'Secrettsumori',
-//     'Xpresskins',
-//     'FreshTango',
-//     'V1Tech',
-//     'Senpai Squad',
-//     'Tenga',
-//     'iymagic',
-//     'nekomimipunks',
-//     'WNTD inc',
-//     'Otakuruma',
-//     '_Shinobu.us',
-//     'Himawarii.US',
-//     'kurozoku',
-//     'catchmydrift.jp',
-//     'angy frog art',
-//     'Bimyou Workshop',
-//     'Kusoya.jp',
-//     "The Kigu Stop / Whats Clackin",
-//     'Pikadude',
-//     'AnimeCoast',
-//     'Send Calamity',
-//     'Dreamscape.cc',
-//     'ara.culture',
-//     'BloodArtisan',
-//     'Mangahole',
-//     'Pandora X'
-// ]
-
 
 export let artists = [
     {
@@ -130,7 +89,7 @@ export let artists = [
         booth: 28
     },
     {
-        vendor: 'Golden Koi Designs',
+        vendor: 'Dream Realm Studio',
         booth: 29
     },
     {
