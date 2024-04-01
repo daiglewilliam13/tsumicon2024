@@ -14,6 +14,11 @@
     src: url('fonts/barlow-semi-condensed/BarlowSemiCondensed-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'adensor';
+    src: url('fonts/adensor.ttf');
+}
+
 html {
     font-size: 1rem;
     overflow-x: hidden;

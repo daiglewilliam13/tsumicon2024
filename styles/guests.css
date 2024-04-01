@@ -69,6 +69,11 @@
     opacity: 0;
 }
 
+.booth-details {
+    margin:0 1rem;
+    font-family: "BarlowSemiCondensed-Bold";
+    font-size: 1.5rem;
+}
 .guest-card-wrapper:hover .accent-block {
     width: 50%;
     height: 90%;
@@ -83,7 +88,7 @@
 }
 
 .guest-card-wrapper:hover .guest-name {
-    width: 0;
+    width: 100%;
     transition: 450ms ease-in-out;
 
 }
@@ -163,6 +168,7 @@
     background-color: #070707;
     transition: 450ms;
     padding: .5rem 1rem;
+    box-sizing: border-box;
 }
 
 .guest-name {

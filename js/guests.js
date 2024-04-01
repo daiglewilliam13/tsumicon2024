@@ -5,7 +5,6 @@ let sections = Array.from(document.getElementsByClassName('guest-dropdown'));
 
 
 cards.forEach((card) => {
-    console.log(card)
     let video = card.children[0].children[2];
     video.addEventListener('loadeddata', function () {
         if (video.readyState > 3) {
@@ -44,7 +43,6 @@ const showSection = (value) => {
     let delay = 0;
     cards.forEach((card) => {
         let cardParent = card.parentElement.parentElement.id;
-        console.log(cardParent);
         if (cardParent == value) {
             setTimeout(() => {
                 card.classList.add('fade-in')
