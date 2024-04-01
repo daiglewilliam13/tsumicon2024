@@ -43,36 +43,35 @@
     margin: 2rem auto;
 }
 
-#goh .guest-card-wrapper {
-    width: 35rem;
-    height: 35rem;
-
-}
-
-#goh .guest-name {
-    font-size: 2.5rem;
-}
-
 .guest-card-wrapper {
     position: relative;
     background-color: whitesmoke;
-    width: 26rem;
-    height: 26rem;
-    margin: 1rem;
+    width: 100%;
+    max-width: 26rem;
     z-index: 0;
     transition: 450ms;
     overflow: hidden;
-
 }
 
+.goh-card {
+    width: 100%;
+    max-width: 35rem;
+}
+
+.goh-card .guest-name {
+    font-size: 2.5rem;
+}
 .guest {
     opacity: 0;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .booth-details {
     margin:0 1rem;
     font-family: "BarlowSemiCondensed-Bold";
     font-size: 1.5rem;
+    transition: 200ms;
 }
 .guest-card-wrapper:hover .accent-block {
     width: 50%;
@@ -82,7 +81,7 @@
 }
 
 .guest-card-wrapper:hover .guest-details {
-    top: 90%;
+    bottom: 0;
     width: 100%;
     transition: 450ms ease-in-out;
 }
@@ -93,37 +92,11 @@
 
 }
 
-.guest-card-wrapper:hover .socials-icon {
-    margin-bottom: 1rem;
-    transition: 450ms ease;
-}
-
 .guest-card-wrapper:hover .card-image {
     width: 100%;
-    height: 100%;
     transition: 450ms ease-in-out;
     filter: brightness(100%);
-}
-
-.socials-icon {
-    height: 2rem;
-    margin-bottom: .5rem;
-    transition: 450ms;
-}
-
-.socials-icon:hover {
-    filter: drop-shadow(5px 5px 10px #070707);
-    cursor: pointer;
-}
-
-.icon-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 2rem;
-    left: 1rem;
-    top: 1rem;
-
+    margin:0;
 }
 
 
@@ -149,26 +122,28 @@
 }
 
 .card-image {
-    position: absolute;
+    position: relative;
     width: 80%;
-    height: 80%;
     z-index: 2;
-    bottom: 0;
-    right: 0;
     object-fit: cover;
     transition: 450ms;
     filter: brightness(50%);
+    vertical-align: middle;
+    margin-top: 20%;
+    margin-left: 20%;
+    right: 0%;
 }
 
 .guest-details {
-    position: relative;
+    position: absolute;
     width: 60%;
     z-index: 3;
-    top: 70%;
+    bottom: 15%;
     background-color: #070707;
     transition: 450ms;
     padding: .5rem 1rem;
     box-sizing: border-box;
+    transition: 400ms;
 }
 
 .guest-name {
@@ -184,13 +159,6 @@
     transition: 450ms;
     display: flex;
     flex-wrap: wrap;
-}
-
-.badge {
-    display: inline-block;
-    margin: 2px;
-    border: 1px solid whitesmoke;
-    padding: 2px;
 }
 
 .black-bar {
