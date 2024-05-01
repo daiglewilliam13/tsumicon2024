@@ -7,3 +7,18 @@
 #hero {
     padding-top: 0;
 }
+
+#hero-button-wrapper {
+    display:flex;
+}
+
+.locale-button img {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 1rem;
+    transition: 200ms;
+}
+
+.locale-button img:hover {
+    filter: drop-shadow(5px 5px 10px grey);
+}
