@@ -10,6 +10,8 @@
 
 #hero-button-wrapper {
     display:flex;
+    flex-wrap: wrap;
+
 }
 
 .locale-button img {
