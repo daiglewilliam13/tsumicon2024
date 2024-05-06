@@ -91,6 +91,6 @@ const buildArtistList = (vendorArr) => {
     artistListWrapper.innerHTML = artistList;
 }
 
-buildVendorList(sortedVendorAlpha);
-buildArtistList(sortedArtistAlpha);
+// buildVendorList(sortedVendorAlpha);
+// buildArtistList(sortedArtistAlpha);
 

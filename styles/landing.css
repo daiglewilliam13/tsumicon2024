@@ -1,0 +1,26 @@
+#hero-information {
+    height: 100vh;
+    padding-top: 3rem;
+    box-sizing: border-box;
+}
+
+#hero {
+    padding-top: 0;
+}
+
+#hero-button-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.locale-button img {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 1rem;
+    transition: 200ms;
+}
+
+.locale-button img:hover {
+    filter: drop-shadow(5px 5px 10px grey);
+}
